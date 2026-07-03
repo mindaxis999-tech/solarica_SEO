@@ -1,0 +1,146 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Product Catalog | Solarica</title>
+    
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    
+    <link rel="stylesheet" href="css/navbar.css?v=2">
+    <link rel="stylesheet" href="css/footer.css">
+    <link rel="stylesheet" href="css/cursor.css">
+    <link rel="stylesheet" href="css/catalog.css?v=1">
+    
+    <script src="https://cdn.jsdelivr.net/gh/studio-freight/lenis@1.0.29/bundled/lenis.min.js"></script>
+    <!-- Full Favicon Cross-Platform Suite Integration -->
+<link rel="shortcut icon" href="assets/images/favicon/favicon.ico" type="image/x-icon">
+<link rel="apple-touch-icon" sizes="180x180" href="assets/images/favicon/apple-touch-icon.png">
+<link rel="icon" type="image/png" sizes="32x32" href="assets/images/favicon/favicon-32x32.png">
+<link rel="icon" type="image/png" sizes="16x16" href="assets/images/favicon/favicon-16x16.png">
+<link rel="manifest" href="assets/images/favicon/site.webmanifest">
+</head>
+<body class="bg-slate-50 font-sans text-slate-900">
+
+    <!-- <div id="cursor-dot" class="custom-cursor-dot hidden-mobile"></div>
+    <div id="cursor-ring" class="custom-cursor-ring hidden-mobile"></div> -->
+    <div id="navbar-placeholder"></div>
+
+	<!-- Breadcrumb Navigation Container -->
+<nav aria-label="breadcrumb" class="breadcrumb-nav">
+    <div class="breadcrumb-container">
+        <ol id="breadcrumb-list" class="breadcrumb-list">
+            <!-- JavaScript will automatically inject clickable links here -->
+        </ol>
+    </div>
+</nav>
+    
+    <main class="catalog-main">
+        
+        <div class="catalog-top-banner">
+            <div class="container">
+                <span class="catalog-breadcrumb">CATALOG</span>
+                <div class="catalog-header-flex">
+                    <h1 id="catalog-title">All Products</h1>
+                    <span id="catalog-count" class="catalog-count">Showing 0 results</span>
+                </div>
+            </div>
+        </div>
+
+        <div class="container catalog-layout">
+            
+            <aside class="catalog-sidebar">
+    <div class="sidebar-header">
+        <i class="fa-solid fa-table-cells-large"></i>
+        <h2>Categories</h2>
+    </div>
+    
+    <div id="sidebar-accordion" class="sidebar-accordion">
+        
+        <div class="accordion-item active">
+            <button class="accordion-btn theme-orange">
+                ENERGY INDIA <i class="fa-solid fa-chevron-down"></i>
+            </button>
+            <div class="subcategory-list" style="max-height: 500px;">
+                <div class="sub-link" data-category="Solar Street Lighting Systems">Solar Street Lights</div>
+                <div class="sub-link" data-category="Solar Water Pumping Systems">Solar Water Pumps</div>
+                <div class="sub-link" data-category="Solar Water Heating Solutions">Solar Water Heater</div>
+                <div class="sub-link" data-category="Solar Garden & Decorative Lights">Solar Garden Lights</div>
+                <div class="sub-link" data-category="Solar Garden & Decorative Lights">Solar Decorative Lights</div>
+                <div class="sub-link" data-category="Solar Flood & Security Lights">Solar Flood Lights</div>
+                <div class="sub-link" data-category="Solar Inverter Systems">Solar Inverter</div>
+                <div class="sub-link" data-category="Solar Photovoltaic Modules">Solar Panels</div>
+                <div class="sub-link" data-category="Commercial & Residential Lighting">AC Lights</div>
+                <div class="sub-link" data-category="Interior & Decorative Lighting">home-lights</div>
+            </div>
+        </div>
+
+        <!-- SYSTEMS -->
+        <div class="accordion-item">
+            <button class="accordion-btn theme-blue">
+                SYSTEMS <i class="fa-solid fa-chevron-down"></i>
+            </button>
+            <div class="subcategory-list">
+                <!-- Update these links! -->
+                <a href="pm-surya-ghar.html" class="sub-link" style="display: block;">PM Surya Ghar Yojana</a>
+                <a href="kusum-yojana.html" class="sub-link" style="display: block;">KUSUM Yojana</a>
+                <a href="saur-krushi-pump.html" class="sub-link" style="display: block;">Saur Krushi Pump Yojana</a>
+                <a href="commercial-projects.html" class="sub-link" style="display: block;">Commercial</a>
+                <a href="industrial-projects.html" class="sub-link" style="display: block;">Industrial</a>
+                <a href="power-projects.html" class="sub-link" style="display: block;">Power Projects</a>
+            </div>
+        </div>
+
+        <div class="accordion-item">
+            <button class="accordion-btn theme-purple">
+                FABTECH <i class="fa-solid fa-chevron-down"></i>
+            </button>
+            <div class="subcategory-list">
+                <div class="sub-link" data-category="Lighting Accessories & Hardware">light-accessories</div>
+                <div class="sub-link" data-category="Street Light Poles & Masts">poles</div>
+                <div class="sub-link" data-category="Control Panels & Automation">control-panels</div>
+                <div class="sub-link" data-category="Solar Home & Portable Products">Solar Home Products</div>
+                <div class="sub-link" data-category="Solar Mounting Structures">solar-structures</div>
+                <div class="sub-link" data-category="Industrial Fabrication & Works">industrial-works</div>
+            </div>
+        </div>
+
+        <div class="accordion-item">
+            <button class="accordion-btn theme-green">
+                GREENWHEELS <i class="fa-solid fa-chevron-down"></i>
+            </button>
+            <div class="subcategory-list">
+                <div class="sub-link" data-category="Charging Stations">charging-station</div>
+                <div class="sub-link" data-category="Electric Vehicle Chargers">ev-chargers</div>
+                <div class="sub-link" data-category="Electric Vehicle Battery Systems">ev-batteries</div>
+                <div class="sub-link" data-category="Annual Maintenance Contracts">amc-services</div>
+            </div>
+        </div>
+
+    </div>
+</aside>
+
+            <div class="catalog-content">
+                <div id="product-grid" class="product-grid">
+                    </div>
+                
+                <div id="empty-state" class="empty-state hidden">
+                    <i class="fa-solid fa-box-open"></i>
+                    <h3>No products found</h3>
+                    <p>Select a different category from the menu.</p>
+                </div>
+            </div>
+
+        </div>
+    </main>
+
+    <div id="footer-placeholder"></div>
+
+    <script src="js/navbar.js"></script>
+    <script src="js/footer.js"></script>
+    <script src="js/cursor.js"></script>
+    <script src="js/product-database.js"></script> 
+    <script src="js/catalog.js"></script>
+	<script src="js/breadcrumb.js"></script> 
+</body>
+</html>
