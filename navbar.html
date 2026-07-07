@@ -1,4 +1,4 @@
-﻿<div class="nav-wrapper" id="nav-wrapper">
+<div class="nav-wrapper" id="nav-wrapper">
     
     <div class="nav-top-bar" id="nav-top-bar">
         <div class="nav-container top-bar-inner">
@@ -24,7 +24,7 @@
             
             <div class="logo-container" id="nav-logo">
                 <a href="index.html" class="logo-link">
-                    <img src="assets/images/logoo.png" alt="Solarica Logo" class="logo-img">
+                    <img src="assets/images/logoo.png" alt="Solarica Logo" title="Solarica Logo" class="logo-img">
                 </a>
             </div>
 
@@ -120,12 +120,16 @@
                     </div>
                 </div>
 
+                <div class="nav-item">
+                    <a href="global-market.html" class="nav-pill">Global Market</a>
+                </div>
+
                 <!-- <div class="nav-item">
                     <a href="finance.html" class="nav-pill">Finance</a>
                 </div> -->
 
                 <div class="nav-item has-dropdown">
-                    <a href="projects.html" class="nav-pill">Projects / Schemes <i class="fa-solid fa-chevron-down chevron"></i></a>
+                    <a href="javascript:void(0)" class="nav-pill">Projects / Schemes <i class="fa-solid fa-chevron-down chevron"></i></a>
                     <div class="standard-dropdown">
                         <a href="pm-surya-ghar.html">PM Surya Ghar Yojana</a>
                                     <a href="kusum-yojana.html">KUSUM Yojana</a>
@@ -145,6 +149,23 @@
             </nav>
 
             <div class="nav-actions">
+                <!-- Custom Google Translate Widget -->
+                <div class="translate-container hidden-mobile">
+                    <button class="translate-btn" id="translate-trigger">
+                        <i class="fa-solid fa-globe globe-icon"></i>
+                        <span>Select Language</span>
+                        <i class="fa-solid fa-chevron-down chevron-icon"></i>
+                    </button>
+                    <div class="translate-dropdown" id="translate-dropdown">
+                        <a href="javascript:void(0)" data-lang="en">English</a>
+                        <a href="javascript:void(0)" data-lang="hi">Hindi</a>
+                        <a href="javascript:void(0)" data-lang="mr">Marathi</a>
+                        <a href="javascript:void(0)" data-lang="es">Spanish</a>
+                        <a href="javascript:void(0)" data-lang="fr">French</a>
+                        <a href="javascript:void(0)" data-lang="de">German</a>
+                    </div>
+                </div>
+
                 <a href="contact.html" class="btn-contact-nav hidden-mobile">
                     Contact Us <i class="fa-solid fa-arrow-up-right-from-square"></i>
                 </a>
@@ -213,13 +234,15 @@
                     </div>
                     <div class="mobile-sub-group">
                         <span class="mobile-sub-header text-blue-600">Private Sectors</span>
-                        <a href="projects.html?category=Residential">Residential Projects</a>
+                        <a href="pm-surya-ghar.html">Residential Projects</a>
                         <a href="commercial-projects.html">Commercial Setup</a>
                         <a href="industrial-projects.html">Industrial Setup</a>
                         <a href="power-projects.html">Power Projects</a>
                     </div>
                 </div>
             </div>
+
+            <a href="global-market.html" class="mobile-link">Global Market</a>
 
             <div class="mobile-item has-mobile-dropdown">
                 <button class="mobile-link-flex mobile-dropdown-trigger">
@@ -233,6 +256,24 @@
                         <a href="our-companies.html">Our Companies</a>
                         <a href="leadership.html">Board of Directors</a>
                         <a href="awards.html">Awards and Certifications</a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="mobile-item" style="padding: 0.5rem 0; border-bottom: none;">
+                <div class="translate-container mobile-translate">
+                    <button class="translate-btn" id="mobile-translate-trigger">
+                        <i class="fa-solid fa-globe globe-icon"></i>
+                        <span>Select Language</span>
+                        <i class="fa-solid fa-chevron-down chevron-icon"></i>
+                    </button>
+                    <div class="translate-dropdown" id="mobile-translate-dropdown">
+                        <a href="javascript:void(0)" data-lang="en">English</a>
+                        <a href="javascript:void(0)" data-lang="hi">Hindi</a>
+                        <a href="javascript:void(0)" data-lang="mr">Marathi</a>
+                        <a href="javascript:void(0)" data-lang="es">Spanish</a>
+                        <a href="javascript:void(0)" data-lang="fr">French</a>
+                        <a href="javascript:void(0)" data-lang="de">German</a>
                     </div>
                 </div>
             </div>

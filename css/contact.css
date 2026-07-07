@@ -3,7 +3,7 @@
 ========================================= */
 
 .contact-body { background-color: #f8fafc; color: #0f172a; font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; position: relative; overflow-x: hidden; margin: 0; padding: 0; }
-.contact-main { flex-grow: 1; padding: 10rem 1.5rem 5rem; position: relative; z-index: 10; max-width: 1400px; margin: 0 auto; }
+.contact-main { flex-grow: 1; padding: 2.5rem 1.5rem 5rem; position: relative; z-index: 10; max-width: 1400px; margin: 0 auto; }
 
 /* --- 1. BACKGROUND ANIMATIONS --- */
 .contact-bg-wrapper { position: fixed; inset: 0; z-index: 0; pointer-events: none; overflow: hidden; }

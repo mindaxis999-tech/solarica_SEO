@@ -1,15 +1,24 @@
 document.addEventListener("DOMContentLoaded", () => {
     
     // 1. Auto-Inject Cursor markup with backward-compatible IDs and Classes
-    const cursorDot = document.createElement("div");
-    cursorDot.id = "cursor-dot"; // Added ID for style sheet tracking
-    cursorDot.className = "custom-cursor-dot hidden-mobile";
-    document.body.appendChild(cursorDot);
+    // 1. Auto-Inject/Re-use Cursor markup with backward-compatible IDs and Classes
+    let cursorDot = document.getElementById("cursor-dot");
+    if (!cursorDot) {
+        cursorDot = document.createElement("div");
+        cursorDot.id = "cursor-dot";
+        cursorDot.className = "custom-cursor-dot hidden-mobile";
+        document.body.appendChild(cursorDot);
+    }
+    cursorDot.style.opacity = "0";
 
-    const cursorRing = document.createElement("div");
-    cursorRing.id = "cursor-ring"; // Added ID for style sheet tracking
-    cursorRing.className = "custom-cursor-ring hidden-mobile";
-    document.body.appendChild(cursorRing);
+    let cursorRing = document.getElementById("cursor-ring");
+    if (!cursorRing) {
+        cursorRing = document.createElement("div");
+        cursorRing.id = "cursor-ring";
+        cursorRing.className = "custom-cursor-ring hidden-mobile";
+        document.body.appendChild(cursorRing);
+    }
+    cursorRing.style.opacity = "0";
 
     // 2. Physics & State Variables
     let mouseX = 0, mouseY = 0;
@@ -25,6 +34,9 @@ document.addEventListener("DOMContentLoaded", () => {
         if (!isVisible) {
             cursorDot.style.opacity = "1";
             cursorRing.style.opacity = "1";
+            ringX = mouseX;
+            ringY = mouseY;
+            cursorRing.style.transform = `translate3d(${ringX}px, ${ringY}px, 0) translate(-50%, -50%)`;
             isVisible = true;
         }
         
@@ -53,11 +65,5 @@ document.addEventListener("DOMContentLoaded", () => {
         cursorDot.style.opacity = "0";
         cursorRing.style.opacity = "0";
         isVisible = false;
-    });
-
-    document.addEventListener("mouseenter", () => {
-        cursorDot.style.opacity = "1";
-        cursorRing.style.opacity = "1";
-        isVisible = true;
     });
 });

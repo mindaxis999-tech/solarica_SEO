@@ -1,4 +1,22 @@
 document.addEventListener("DOMContentLoaded", () => {
+    // Inject single-line typography styles for catalog titles to prevent cache issues
+    const injectStyles = () => {
+        const styleId = 'catalog-title-custom-styles';
+        if (!document.getElementById(styleId)) {
+            const style = document.createElement('style');
+            style.id = styleId;
+            style.textContent = `
+                .cat-title {
+                    font-size: clamp(0.8rem, 2.5vw, 0.95rem) !important;
+                    white-space: nowrap !important;
+                    overflow: visible !important;
+                    text-overflow: clip !important;
+                }
+            `;
+            document.head.appendChild(style);
+        }
+    };
+    injectStyles();
     
     // --- 1. EXTRACT DATA ---
     const allProductsArray = Object.entries(productDatabase).map(([slug, data]) => ({ slug, ...data }));
@@ -89,7 +107,7 @@ document.addEventListener("DOMContentLoaded", () => {
                         <div class="badge-enquiry ${themeColorClass}">ENQUIRY NOW</div>
                         <div class="cat-img-box ${lightBgClass}">
                             <div class="img-glow ${themeColorClass}"></div>
-                            <img src="${imgPath}" alt="${product.name}">
+                            <img src="${imgPath}" alt="${product.name}" title="${product.name}">
                         </div>
                         <div class="cat-details">
                             <div class="cat-series">

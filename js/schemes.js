@@ -187,12 +187,19 @@ document.addEventListener("DOMContentLoaded", () => {
         <span class="sec-badge ${colors.lightBg} border-${colors.border} ${colors.text}">
             <i class="fa-solid ${data.icon}"></i> ${badgeType}
         </span>
-        <h1 class="hero-title">${data.title} <br>
+        <h1 class="hero-title" id="seo-h1">${data.title} <br>
             <span class="text-gradient ${colors.gradText}">${data.subtitle}</span>
         </h1>
         <p class="hero-desc">${data.tagline}</p>
         ${data.portalLink ? `<a href="${data.portalLink}" target="_blank" class="btn-gradient ${colors.gradBg}">Register Now <i class="fa-solid fa-arrow-up-right-from-square"></i></a>` : ''}
     `;
+
+    // 4b. Inject Single Compulsory H2 Section Title
+    const sectionTitle = data.type === 'govt-scheme' ? 'Scheme Guidelines & Implementation' : 'Project Scope & Execution Details';
+    const h2Element = document.getElementById("seo-h2");
+    if (h2Element) {
+        h2Element.innerText = sectionTitle;
+    }
 
     // 5. Inject Quote (If exists)
     if (data.quote) {

@@ -25,6 +25,13 @@
     <!-- <div id="cursor-dot" class="custom-cursor-dot hidden-mobile"></div>
     <div id="cursor-ring" class="custom-cursor-ring hidden-mobile"></div> -->
     <div id="navbar-placeholder"></div>
+    <nav aria-label="breadcrumb" class="breadcrumb-nav">
+        <div class="breadcrumb-container">
+            <ol id="breadcrumb-list" class="breadcrumb-list">
+                <!-- JavaScript will automatically inject clickable links here -->
+            </ol>
+        </div>
+    </nav>
     
     <div class="contact-bg-wrapper">
         <div class="bg-windmill">
@@ -103,6 +110,131 @@
     </div>
 
     <div class="form-group">
+        <label for="form-country">Country <span style="color: #dc2626;">*</span></label>
+        <div class="select-wrapper">
+            <select id="form-country" required>
+                <option value="" disabled selected>Select your country</option>
+                <option value="India">India</option>
+                <option value="United States">United States</option>
+                <option value="United Kingdom">United Kingdom</option>
+                <option value="Australia">Australia</option>
+                <option value="United Arab Emirates">United Arab Emirates</option>
+                <option value="Canada">Canada</option>
+                <option value="Singapore">Singapore</option>
+                <option value="Germany">Germany</option>
+                <option value="France">France</option>
+                <option value="Japan">Japan</option>
+                <option value="Saudi Arabia">Saudi Arabia</option>
+                <option value="South Africa">South Africa</option>
+                <option disabled>─────────────────────────</option>
+                <option value="Afghanistan">Afghanistan</option>
+                <option value="Albania">Albania</option>
+                <option value="Algeria">Algeria</option>
+                <option value="Andorra">Andorra</option>
+                <option value="Angola">Angola</option>
+                <option value="Argentina">Argentina</option>
+                <option value="Armenia">Armenia</option>
+                <option value="Austria">Austria</option>
+                <option value="Azerbaijan">Azerbaijan</option>
+                <option value="Bahrain">Bahrain</option>
+                <option value="Bangladesh">Bangladesh</option>
+                <option value="Belgium">Belgium</option>
+                <option value="Bhutan">Bhutan</option>
+                <option value="Bolivia">Bolivia</option>
+                <option value="Brazil">Brazil</option>
+                <option value="Brunei">Brunei</option>
+                <option value="Bulgaria">Bulgaria</option>
+                <option value="Cambodia">Cambodia</option>
+                <option value="Cameroon">Cameroon</option>
+                <option value="Chile">Chile</option>
+                <option value="China">China</option>
+                <option value="Colombia">Colombia</option>
+                <option value="Costa Rica">Costa Rica</option>
+                <option value="Croatia">Croatia</option>
+                <option value="Cuba">Cuba</option>
+                <option value="Cyprus">Cyprus</option>
+                <option value="Czech Republic">Czech Republic</option>
+                <option value="Denmark">Denmark</option>
+                <option value="Ecuador">Ecuador</option>
+                <option value="Egypt">Egypt</option>
+                <option value="Estonia">Estonia</option>
+                <option value="Ethiopia">Ethiopia</option>
+                <option value="Fiji">Fiji</option>
+                <option value="Finland">Finland</option>
+                <option value="Georgia">Georgia</option>
+                <option value="Greece">Greece</option>
+                <option value="Hong Kong">Hong Kong</option>
+                <option value="Hungary">Hungary</option>
+                <option value="Iceland">Iceland</option>
+                <option value="Indonesia">Indonesia</option>
+                <option value="Iran">Iran</option>
+                <option value="Iraq">Iraq</option>
+                <option value="Ireland">Ireland</option>
+                <option value="Israel">Israel</option>
+                <option value="Italy">Italy</option>
+                <option value="Jordan">Jordan</option>
+                <option value="Kazakhstan">Kazakhstan</option>
+                <option value="Kenya">Kenya</option>
+                <option value="Kuwait">Kuwait</option>
+                <option value="Kyrgyzstan">Kyrgyzstan</option>
+                <option value="Laos">Laos</option>
+                <option value="Latvia">Latvia</option>
+                <option value="Lebanon">Lebanon</option>
+                <option value="Libya">Libya</option>
+                <option value="Liechtenstein">Liechtenstein</option>
+                <option value="Lithuania">Lithuania</option>
+                <option value="Luxembourg">Luxembourg</option>
+                <option value="Malaysia">Malaysia</option>
+                <option value="Maldives">Maldives</option>
+                <option value="Malta">Malta</option>
+                <option value="Mauritius">Mauritius</option>
+                <option value="Mexico">Mexico</option>
+                <option value="Monaco">Monaco</option>
+                <option value="Mongolia">Mongolia</option>
+                <option value="Morocco">Morocco</option>
+                <option value="Myanmar">Myanmar</option>
+                <option value="Nepal">Nepal</option>
+                <option value="Netherlands">Netherlands</option>
+                <option value="New Zealand">New Zealand</option>
+                <option value="Nigeria">Nigeria</option>
+                <option value="Norway">Norway</option>
+                <option value="Oman">Oman</option>
+                <option value="Pakistan">Pakistan</option>
+                <option value="Panama">Panama</option>
+                <option value="Peru">Peru</option>
+                <option value="Philippines">Philippines</option>
+                <option value="Poland">Poland</option>
+                <option value="Portugal">Portugal</option>
+                <option value="Qatar">Qatar</option>
+                <option value="Romania">Romania</option>
+                <option value="Russia">Russia</option>
+                <option value="Serbia">Serbia</option>
+                <option value="Slovakia">Slovakia</option>
+                <option value="Slovenia">Slovenia</option>
+                <option value="South Korea">South Korea</option>
+                <option value="Spain">Spain</option>
+                <option value="Sri Lanka">Sri Lanka</option>
+                <option value="Sweden">Sweden</option>
+                <option value="Switzerland">Switzerland</option>
+                <option value="Taiwan">Taiwan</option>
+                <option value="Tajikistan">Tajikistan</option>
+                <option value="Tanzania">Tanzania</option>
+                <option value="Thailand">Thailand</option>
+                <option value="Turkey">Turkey</option>
+                <option value="Uganda">Uganda</option>
+                <option value="Ukraine">Ukraine</option>
+                <option value="Uzbekistan">Uzbekistan</option>
+                <option value="Venezuela">Venezuela</option>
+                <option value="Vietnam">Vietnam</option>
+                <option value="Yemen">Yemen</option>
+                <option value="Zambia">Zambia</option>
+                <option value="Zimbabwe">Zimbabwe</option>
+            </select>
+            <i class="fa-solid fa-chevron-down select-icon"></i>
+        </div>
+    </div>
+
+    <div class="form-group">
         <label for="form-subject">Subject <span style="color: #dc2626;">*</span></label>
         <div class="select-wrapper">
             <select id="form-subject" required>
@@ -137,6 +269,7 @@ document.getElementById("solarica-whatsapp-form").addEventListener("submit", fun
     // Extract values from fields
     const fullName   = document.getElementById("form-fullname").value;
     const email      = document.getElementById("form-email").value;
+    const country    = document.getElementById("form-country").value;
     const countryCode= document.getElementById("form-country-code").value;
     const phone      = document.getElementById("form-phone").value;
     const address    = document.getElementById("form-address").value;
@@ -147,6 +280,7 @@ document.getElementById("solarica-whatsapp-form").addEventListener("submit", fun
     const formElements = [
         document.getElementById("form-fullname"),
         document.getElementById("form-email"),
+        document.getElementById("form-country"),
         document.getElementById("form-address"),
         document.getElementById("form-subject"),
         document.getElementById("form-message")
@@ -154,7 +288,7 @@ document.getElementById("solarica-whatsapp-form").addEventListener("submit", fun
 
     let isFormValid = true;
     formElements.forEach(el => {
-        if (!el.value.trim()) {
+        if (!el.value || !el.value.trim()) {
             el.classList.add("invalid-field");
             isFormValid = false;
         } else {
@@ -175,9 +309,9 @@ document.getElementById("solarica-whatsapp-form").addEventListener("submit", fun
 
     if (!phoneValid || !isFormValid) {
         if (!phoneValid) {
-        phoneErr.textContent = isOther ? "Please enter a valid phone number" : `Please enter exactly ${requiredLength} digits for ${countryCode}`;
-        phoneErr.classList.add("visible");
-        phoneGrp.classList.add("invalid-field");
+            phoneErr.textContent = isOther ? "Please enter a valid phone number" : `Please enter exactly ${requiredLength} digits for ${countryCode}`;
+            phoneErr.classList.add("visible");
+            phoneGrp.classList.add("invalid-field");
         }
         return; // Stop submission if any field is invalid
     }
@@ -185,12 +319,13 @@ document.getElementById("solarica-whatsapp-form").addEventListener("submit", fun
     // Create a beautifully formatted bold text block message for WhatsApp chat screen
     const formattedMessage = 
         `*New Website Inquiry | Solarica*%0A%0A` +
-        `ðŸ‘¤ *Name:* ${fullName}%0A` +
-        `ðŸ“§ *Email:* ${email}%0A` +
-        `ðŸ“ž *Phone:* ${countryCode} ${phone}%0A` +
-        `ðŸ“ *Address:* ${address}%0A` +
-        `ðŸ“Œ *Subject:* ${subject}%0A%0A` +
-        `ðŸ’¬ *Message:* %0A${message}`;
+        `👤 *Name:* ${fullName}%0A` +
+        `📧 *Email:* ${email}%0A` +
+        `🌐 *Country:* ${country}%0A` +
+        `📞 *Phone:* ${countryCode} ${phone}%0A` +
+        `📍 *Address:* ${address}%0A` +
+        `📌 *Subject:* ${subject}%0A%0A` +
+        `💬 *Message:* %0A${message}`;
 
     // Build api endpoint url link structure
     const whatsappUrl = `https://wa.me/${companyWhatsAppNumber}?text=${formattedMessage}`;
@@ -205,6 +340,7 @@ document.getElementById("solarica-whatsapp-form").addEventListener("submit", fun
     const topicDropdown = document.getElementById("form-subject");
     const phoneInput = document.getElementById("form-phone");
     const countrySelect = document.getElementById("form-country-code");
+    const countryDropdown = document.getElementById("form-country");
 
     const lengthConfig = { "+91": 10, "+1": 10, "+44": 10, "+61": 9, "+971": 9 };
     const placeholderConfig = { 
@@ -241,12 +377,55 @@ document.getElementById("solarica-whatsapp-form").addEventListener("submit", fun
         document.querySelector(".phone-input-group").classList.remove("invalid-field");
     });
 
-    // Clear invalid styling on other fields when user types
-    const otherInputs = ["form-fullname", "form-email", "form-address", "form-subject", "form-message"];
+    // Auto-sync between Country dropdown and Phone Country Code dropdown
+    if (countryDropdown && countrySelect) {
+        countryDropdown.addEventListener("change", function() {
+            const country = this.value;
+            if (country === "India") {
+                countrySelect.value = "+91";
+            } else if (country === "United States" || country === "Canada") {
+                countrySelect.value = "+1";
+            } else if (country === "United Kingdom") {
+                countrySelect.value = "+44";
+            } else if (country === "Australia") {
+                countrySelect.value = "+61";
+            } else if (country === "United Arab Emirates") {
+                countrySelect.value = "+971";
+            } else {
+                countrySelect.value = ""; // Other
+            }
+            
+            // Trigger change event to update phone configuration
+            countrySelect.dispatchEvent(new Event("change"));
+        });
+
+        countrySelect.addEventListener("change", function() {
+            const code = this.value;
+            const currentCountry = countryDropdown.value;
+            
+            if (code === "+91") {
+                countryDropdown.value = "India";
+            } else if (code === "+1") {
+                if (currentCountry !== "United States" && currentCountry !== "Canada") {
+                    countryDropdown.value = "United States";
+                }
+            } else if (code === "+44") {
+                countryDropdown.value = "United Kingdom";
+            } else if (code === "+61") {
+                countryDropdown.value = "Australia";
+            } else if (code === "+971") {
+                countryDropdown.value = "United Arab Emirates";
+            }
+        });
+    }
+
+    // Clear invalid styling on other fields when user types or changes option
+    const otherInputs = ["form-fullname", "form-email", "form-address", "form-country", "form-subject", "form-message"];
     otherInputs.forEach(id => {
         const el = document.getElementById(id);
         if(el) {
             el.addEventListener("input", () => el.classList.remove("invalid-field"));
+            el.addEventListener("change", () => el.classList.remove("invalid-field"));
         }
     });
 
@@ -359,5 +538,6 @@ document.getElementById("solarica-whatsapp-form").addEventListener("submit", fun
     <script src="js/navbar.js"></script>
     <script src="js/footer.js"></script>
     <script src="js/cursor.js"></script>
+    <script src="js/breadcrumb.js"></script>
 </body>
 </html>

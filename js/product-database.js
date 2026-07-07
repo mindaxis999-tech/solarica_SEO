@@ -181,7 +181,7 @@ const productDatabase = {
   // 4. SOLAR GARDEN & DECORATIVE LIGHTS
   "solar-garden-light-fire": {
     name: "Solar Garden Light (Fire)",
-    category: "Solar Garden & Decorative Lights",
+    category: "Solar Garden Lights",
     company: "Solarica Energy India Pvt. Ltd.",
     description: "Beautiful pathway lighting for gardens and walkways with warm white LED fire flame effect and automatic on/off control.",
     features: ["96 LEDs Fire Effect", "Dusk to Dawn Sensor", "Auto Mode Enabled", "IP65 Waterproof"],
@@ -191,7 +191,7 @@ const productDatabase = {
   },
   "garden-light-rgb": {
     name: "Decorative Garden Light RGB",
-    category: "Solar Garden & Decorative Lights",
+    category: "Solar Garden Lights",
     company: "Solarica Energy India Pvt. Ltd.",
     description: "Decorative solar light with color changing features and remote control for beautiful garden ambiance.",
     features: ["Color Changing (RGB)", "Remote Control", "Decorative Ambiance", "Auto Sensor"],
@@ -201,7 +201,7 @@ const productDatabase = {
   },
   "solar-bollard-light-premium": {
     name: "Solar Garden Light (Premium Bollard)",
-    category: "Solar Garden & Decorative Lights",
+    category: "Solar Garden Lights",
     company: "Solarica Energy India Pvt. Ltd.",
     description: "Modern bollard design solar light for driveways and garden borders with high brightness LED and robust stand.",
     features: ["Modern Bollard Design", "High Brightness", "Dusk to Dawn Sensor", "Heavy Duty Stand"],
@@ -211,7 +211,7 @@ const productDatabase = {
   },
   "adjustable-spike-garden-light": {
     name: "Adjustable Spike Garden Light",
-    category: "Solar Garden & Decorative Lights",
+    category: "Solar Garden Lights",
     company: "Solarica Energy India Pvt. Ltd.",
     description: "Adjustable spike light for highlighting plants and garden features with focused beam lighting.",
     features: ["Adjustable Angle", "Focused Beam", "Easy Spike Mount", "Dawn to Dusk Sensor"],
@@ -221,7 +221,7 @@ const productDatabase = {
   },
   "traditional-solar-lantern": {
     name: "Traditional Solar Lantern Light",
-    category: "Solar Garden & Decorative Lights",
+    category: "Solar Garden Lights",
     company: "Solarica Energy India Pvt. Ltd.",
     description: "Traditional lantern style solar light with vintage design perfect for creating classic garden ambiance with motion sensor.",
     features: ["Vintage Lantern Design", "Motion Sensor", "High Power 120W", "Wide Beam Angle"],
@@ -231,7 +231,7 @@ const productDatabase = {
   },
   "solar-decorative-string-light": {
     name: "Solar Decorative String Light",
-    category: "Solar Garden & Decorative Lights",
+    category: "Solar Garden Lights",
     company: "Solarica Energy India Pvt. Ltd.",
     description: "Decorative string lights with multiple LED bulbs perfect for parties and outdoor celebrations.",
     features: ["Decorative String", "Warm Yellow Glow", "Party Light", "Auto On/Off"],
@@ -243,7 +243,7 @@ const productDatabase = {
   // 5. SOLAR DECORATIVE LIGHTS
   "solar-string-lights-10m": {
     name: "Solar String Light 10M",
-    category: "Solar Garden & Decorative Lights",
+    category: "Solar Decorative Lights",
     company: "Solarica Energy India Pvt. Ltd.",
     description: "Beautiful string lights with warm white LEDs perfect for creating magical outdoor ambiance.",
     features: ["50 Fairy Lights", "8 Flash Modes", "IP65 Waterproof", "Auto On/Off"],
@@ -253,7 +253,7 @@ const productDatabase = {
   },
   "solar-fairy-lights-20m": {
     name: "Solar Fairy Light 20M",
-    category: "Solar Garden & Decorative Lights",
+    category: "Solar Decorative Lights",
     company: "Solarica Energy India Pvt. Ltd.",
     description: "Elegant curtain-style decorative lights perfect for backdrop decoration and outdoor events.",
     features: ["Curtain Pattern", "Remote Control", "200 LEDs", "Backdrop Decor"],
@@ -263,7 +263,7 @@ const productDatabase = {
   },
   "solar-curtain-lights": {
     name: "Solar Curtain Light 15W",
-    category: "Solar Garden & Decorative Lights",
+    category: "Solar Decorative Lights",
     company: "Solarica Energy India Pvt. Ltd.",
     description: "Curtain-style decorative lights perfect for covering large areas with uniform lighting distribution.",
     features: ["Uniform Lighting", "300 LEDs", "Mesh Pattern", "Waterproof"],
@@ -273,7 +273,7 @@ const productDatabase = {
   },
   "solar-net-lights": {
     name: "Solar Net Light 22W",
-    category: "Solar Garden & Decorative Lights",
+    category: "Solar Decorative Lights",
     company: "Solarica Energy India Pvt. Ltd.",
     description: "Net-style hanging lights perfect for roof edges and creating winter wonderland effects.",
     features: ["Icicle Drops", "Hanging Style", "Cool White", "Winter Effect"],
@@ -283,7 +283,7 @@ const productDatabase = {
   },
   "solar-icicle-lights": {
     name: "Solar ICICLE Light 18W",
-    category: "Solar Garden & Decorative Lights",
+    category: "Solar Decorative Lights",
     company: "Solarica Energy India Pvt. Ltd.",
     description: "Colorful butterfly-shaped decorative lights that add whimsical charm to any garden space.",
     features: ["Butterfly Shapes", "Color Changing", "Multi-Color", "Whimsical Charm"],
@@ -293,7 +293,7 @@ const productDatabase = {
   },
   "solar-motif-lights": {
     name: "Solar Motif Lights 25W",
-    category: "Solar Garden & Decorative Lights",
+    category: "Solar Decorative Lights",
     company: "Solarica Energy India Pvt. Ltd.",
     description: "Beautiful flower-shaped lights that bloom with color, perfect for garden and patio decoration.",
     features: ["Flower Shape", "Blooming Effect", "RGB Colors", "Patio Decor"],

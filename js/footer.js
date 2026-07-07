@@ -4,7 +4,7 @@ document.addEventListener("DOMContentLoaded", () => {
     const footerPlaceholder = document.getElementById('footer-placeholder');
     
     if (footerPlaceholder) {
-        fetch('footer.html')
+        fetch('footer.html?v=1.1')
             .then(res => {
                 if (!res.ok) throw new Error("Footer file not found.");
                 return res.text();

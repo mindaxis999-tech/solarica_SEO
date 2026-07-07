@@ -1,4 +1,20 @@
 document.addEventListener("DOMContentLoaded", () => {
+    // Inject single-line typography styles for product titles to prevent cache issues
+    const injectStyles = () => {
+        const styleId = 'product-title-custom-styles';
+        if (!document.getElementById(styleId)) {
+            const style = document.createElement('style');
+            style.id = styleId;
+            style.textContent = `
+                .product-title {
+                    font-size: clamp(1.2rem, 3.8vw, 2.8rem) !important;
+                    white-space: nowrap !important;
+                }
+            `;
+            document.head.appendChild(style);
+        }
+    };
+    injectStyles();
     
     // 1. Get the slug from the URL
     const pageName = window.location.pathname.split("/").pop();
@@ -65,7 +81,10 @@ document.addEventListener("DOMContentLoaded", () => {
     if(rawPath.startsWith('/')) {
         rawPath = rawPath.substring(1);
     }
-    document.getElementById('product-image').src = `../assets/images/${rawPath}`;
+    const detailImg = document.getElementById('product-image');
+    detailImg.src = `../assets/images/${rawPath}`;
+    detailImg.alt = product.name;
+    detailImg.title = product.name;
 
     // 5. Populate Features
     const featuresContainer = document.getElementById('product-features');
@@ -108,8 +127,10 @@ document.addEventListener("DOMContentLoaded", () => {
                 <div class="spec-icon-box ${themeBg} ${themeText}">
                     <i class="fa-solid ${getIconClass(key)} text-xl"></i>
                 </div>
-                <h4 class="spec-label">${key}</h4>
-                <p class="spec-value">${value}</p>
+                <div class="spec-text-box">
+                    <h4 class="spec-label">${key}</h4>
+                    <p class="spec-value">${value}</p>
+                </div>
             </div>
         `;
     });
@@ -118,8 +139,10 @@ document.addEventListener("DOMContentLoaded", () => {
         specsGrid.innerHTML += `
             <div class="spec-card spec-card-orange group">
                 <div class="spec-icon-box spec-icon-orange text-xl font-black">₹</div>
-                <h4 class="spec-label">Base Price</h4>
-                <p class="spec-value">${product.basePrice}</p>
+                <div class="spec-text-box">
+                    <h4 class="spec-label">Base Price</h4>
+                    <p class="spec-value">${product.basePrice}</p>
+                </div>
             </div>
         `;
     }
@@ -127,8 +150,10 @@ document.addEventListener("DOMContentLoaded", () => {
         specsGrid.innerHTML += `
             <div class="spec-card spec-card-slate group">
                 <div class="spec-icon-box spec-icon-slate"><i class="fa-solid fa-box text-xl"></i></div>
-                <h4 class="spec-label">Installation</h4>
-                <p class="spec-value">${product.installation}</p>
+                <div class="spec-text-box">
+                    <h4 class="spec-label">Installation</h4>
+                    <p class="spec-value">${product.installation}</p>
+                </div>
             </div>
         `;
     }
@@ -136,8 +161,10 @@ document.addEventListener("DOMContentLoaded", () => {
         specsGrid.innerHTML += `
             <div class="spec-card spec-card-green group">
                 <div class="spec-icon-box spec-icon-green"><i class="fa-solid fa-shield-halved text-xl"></i></div>
-                <h4 class="spec-label">Warranty</h4>
-                <p class="spec-value">${product.warranty}</p>
+                <div class="spec-text-box">
+                    <h4 class="spec-label">Warranty</h4>
+                    <p class="spec-value">${product.warranty}</p>
+                </div>
             </div>
         `;
     }
