@@ -21,7 +21,7 @@ const productDatabase = {
     basePrice: "₹18,500", installation: "₹3,000", warranty: "5 Years"
   },
 
-   "all-in-one-solar-light-40w": {
+   "all-in-one-solar-street-light-40w": {
     name: "All-in-One Solar Light 40W",
     category: "Solar Street Lighting Systems",
     company: "Solarica Energy India Pvt. Ltd.",
@@ -179,7 +179,7 @@ const productDatabase = {
   },
 
   // 4. SOLAR GARDEN & DECORATIVE LIGHTS
-  "solar-garden-light-fire": {
+  "solar-fire-effect-garden-light": {
     name: "Solar Garden Light (Fire)",
     category: "Solar Garden Lights",
     company: "Solarica Energy India Pvt. Ltd.",
@@ -189,7 +189,7 @@ const productDatabase = {
     image: "products/solor garden lights/solar-garden-light-fire.png",
     basePrice: "₹1,150", installation: "N/A", warranty: "1 Year"
   },
-  "garden-light-rgb": {
+  "rgb-solar-garden-light": {
     name: "Decorative Garden Light RGB",
     category: "Solar Garden Lights",
     company: "Solarica Energy India Pvt. Ltd.",
@@ -199,7 +199,7 @@ const productDatabase = {
     image: "products/solor garden lights/garden-light-rgb.png",
     basePrice: "₹349", installation: "N/A", warranty: "N/A"
   },
-  "solar-bollard-light-premium": {
+  "premium-solar-bollard-light": {
     name: "Solar Garden Light (Premium Bollard)",
     category: "Solar Garden Lights",
     company: "Solarica Energy India Pvt. Ltd.",
@@ -209,7 +209,7 @@ const productDatabase = {
     image: "products/solor garden lights/solar-bollard-light-premium.png",
     basePrice: "₹7,500", installation: "N/A", warranty: "1 Year"
   },
-  "adjustable-spike-garden-light": {
+  "adjustable-spike-garden-led-light": {
     name: "Adjustable Spike Garden Light",
     category: "Solar Garden Lights",
     company: "Solarica Energy India Pvt. Ltd.",
@@ -229,7 +229,7 @@ const productDatabase = {
     image: "products/solor garden lights/traditional-solar-lantern.png",
     basePrice: "₹5,049", installation: "N/A", warranty: "N/A"
   },
-  "solar-decorative-string-light": {
+  "solar-decorative-string-lights": {
     name: "Solar Decorative String Light",
     category: "Solar Garden Lights",
     company: "Solarica Energy India Pvt. Ltd.",
@@ -489,7 +489,7 @@ const productDatabase = {
     image: "products/ac-lights/led-bulb-9w.png",
     basePrice: "₹150", installation: "₹50", warranty: "2 Years"
   },
-  "cfl-bulb-20w": {
+  "cfl-bulb-20w-warm-white": {
     name: "CFL Bulb 20W",
     category: "Commercial & Residential Lighting",
     company: "Solarica Energy India Pvt. Ltd.",
@@ -529,7 +529,7 @@ const productDatabase = {
     image: "products/ac-lights/smart-led-bulb-12w.png",
     basePrice: "₹800", installation: "₹100", warranty: "2 Years"
   },
-  "high-bay-led-50w": {
+  "high-bay-led-light-50w": {
     name: "High Bay LED 50W",
     category: "Commercial & Residential Lighting",
     company: "Solarica Energy India Pvt. Ltd.",
@@ -561,7 +561,7 @@ const productDatabase = {
     image: "products/home-lights/pendant-light-15w.png",
     basePrice: "₹3,200", installation: "₹400", warranty: "3 Years"
   },
-  "wall-sconce-12w": {
+  "wall-sconce-light-12w": {
     name: "Wall Sconce 12W",
     category: "Interior & Decorative Lighting",
     company: "Solarica Energy India Pvt. Ltd.",
@@ -581,7 +581,7 @@ const productDatabase = {
     image: "products/home-lights/table-lamp-8w.png",
     basePrice: "₹1,800", installation: "₹0", warranty: "2 Years"
   },
-  "bathroom-light-18w": {
+  "led-bathroom-light-18w": {
     name: "Bathroom Light 18W",
     category: "Interior & Decorative Lighting",
     company: "Solarica Energy India Pvt. Ltd.",
@@ -591,7 +591,7 @@ const productDatabase = {
     image: "products/home-lights/bathroom-light-18w.png",
     basePrice: "₹2,200", installation: "₹300", warranty: "3 Years"
   },
-  "chandelier-36w": {
+  "led-chandelier-light-36w": {
     name: "Chandelier 36W",
     category: "Interior & Decorative Lighting",
     company: "Solarica Energy India Pvt. Ltd.",
@@ -607,7 +607,7 @@ const productDatabase = {
   // ==================================================
 
   // 11. LIGHTING ACCESSORIES & HARDWARE
-  "high-mast-accessories-set": {
+  "high-mast-pole-accessories-set": {
     name: "High Mast Accessories Set",
     category: "Lighting Accessories & Hardware",
     company: "Solarica Fabtech Pvt. Ltd.",
@@ -627,7 +627,7 @@ const productDatabase = {
     image: "products/light-accessories/solar-light-accessories-kit.jpeg",
     basePrice: "On Request", installation: "Included", warranty: "2 Years"
   },
-  "outdoor-battery-box-for-solar-lights": {
+  "solar-light-battery-box": {
     name: "Outdoor Battery Box for Solar Lights",
     category: "Lighting Accessories & Hardware",
     company: "Solarica Fabtech Pvt. Ltd.",
@@ -679,7 +679,7 @@ const productDatabase = {
   },
 
   // 12. STREET LIGHT poles & MASTS
-  "decorative-street-light-pole--6m": {
+  "decorative-street-light-pole-6m": {
     name: "6 Meter Decorative Street Pole",
     category: "Street Light Poles & Masts",
     company: "Solarica Fabtech Pvt. Ltd.",
@@ -689,7 +689,7 @@ const productDatabase = {
     image: "products/poles/decorative-street-light-pole-6m.png",
     basePrice: "On Request", installation: "As per site", warranty: "8 Years"
   },
-  "solar-street-light-pole--9m": {
+  "solar-street-light-pole-9m": {
     name: "9 Meter Octagonal Street Light Pole",
     category: "Street Light Poles & Masts",
     company: "Solarica Fabtech Pvt. Ltd.",
@@ -699,7 +699,7 @@ const productDatabase = {
     image: "products/poles/solar-street-light-pole-9m.png",
     basePrice: "On Request", installation: "As per site", warranty: "10 Years"
   },
-  "double-arm-street-light-pole--8m": {
+  "double-arm-street-light-pole-8m": {
     name: "8 Meter Double Arm Street Light Solar Pole",
     category: "Street Light Poles & Masts",
     company: "Solarica Fabtech Pvt. Ltd.",
@@ -709,7 +709,7 @@ const productDatabase = {
     image: "products/poles/double-arm-street-light-pole-8m.png",
     basePrice: "On Request", installation: "As per site", warranty: "12 Years"
   },
-  "high-mast-pole--12m": {
+  "high-mast-pole-12m": {
     name: "12 Meter High Mast Pole",
     category: "Street Light Poles & Masts",
     company: "Solarica Fabtech Pvt. Ltd.",
@@ -719,7 +719,7 @@ const productDatabase = {
     image: "products/poles/high-mast-pole-12m.png",
     basePrice: "On Request", installation: "As per site", warranty: "15 Years"
   },
-  "aluminum-garden-light-pole--3m": {
+  "aluminum-garden-light-pole-3m": {
     name: "3 Meter Garden Light Pole",
     category: "Street Light Poles & Masts",
     company: "Solarica Fabtech Pvt. Ltd.",
@@ -741,7 +741,7 @@ const productDatabase = {
     image: "products/control-panels/solar-street-light-control-panel.png",
     basePrice: "On Request", installation: "Panel Mounted", warranty: "2 Years"
   },
-  "hybrid-solar-controller-panel": {
+  "hybrid-solar-charge-controller": {
     name: "Hybrid Solar Controller Panel",
     category: "Control Panels & Automation",
     company: "Solarica Fabtech Pvt. Ltd.",
@@ -751,7 +751,7 @@ const productDatabase = {
     image: "products/control-panels/hybrid-solar-controller-panel.jpg",
     basePrice: "On Request", installation: "Wall Mounted", warranty: "2 Years"
   },
-  "pwm-solar-charge-controller-box": {
+  "pwm-solar-charge-controller": {
     name: "PWM Solar Charge Controller Box",
     category: "Control Panels & Automation",
     company: "Solarica Fabtech Pvt. Ltd.",
@@ -761,7 +761,7 @@ const productDatabase = {
     image: "products/control-panels/pwm-solar-charge-controller-box.jpeg",
     basePrice: "On Request", installation: "Wall / Pole", warranty: "1 Year"
   },
-  "mppt-solar-control-panel": {
+  "mppt-solar-charge-controller": {
     name: "MPPT Solar Control Panel",
     category: "Control Panels & Automation",
     company: "Solarica Fabtech Pvt. Ltd.",
@@ -771,7 +771,7 @@ const productDatabase = {
     image: "products/control-panels/mppt-solar-control-panel.jpeg",
     basePrice: "On Request", installation: "Pole / Wall", warranty: "3 Years"
   },
-  "all-in-one-solar-controller-unit": {
+  "all-in-one-solar-controller": {
     name: "All-in-One Solar Controller Unit",
     category: "Control Panels & Automation",
     company: "Solarica Fabtech Pvt. Ltd.",
@@ -803,7 +803,7 @@ const productDatabase = {
     image: "products/Solor Home Products/solar-home-lighting-kit.jpg",
     basePrice: "On Request", installation: "Wall Mounted", warranty: "1 Year"
   },
-  "solar-inverter-for-home": {
+  "home-solar-inverter": {
     name: "Solar Inverter for Home",
     category: "Solar Home & Portable Products",
     company: "Solarica Fabtech Pvt. Ltd.",
@@ -813,7 +813,7 @@ const productDatabase = {
     image: "products/Solor Home Products/solar-inverter-for-home.jpeg",
     basePrice: "On Request", installation: "Wall Mounted", warranty: "2 Years"
   },
-  "solar-power-pack-for-homes": {
+  "home-solar-power-pack": {
     name: "Solar Power Pack for Homes",
     category: "Solar Home & Portable Products",
     company: "Solarica Fabtech Pvt. Ltd.",
@@ -823,7 +823,7 @@ const productDatabase = {
     image: "products/Solor Home Products/solar-power-pack-for-homes.webp",
     basePrice: "On Request", installation: "Plug & Play", warranty: "1 Year"
   },
-  "rooftop-solar-panel--150w": {
+  "rooftop-solar-panel-150w": {
     name: "Rooftop Solar Panel – 150W",
     category: "Solar Home & Portable Products",
     company: "Solarica Fabtech Pvt. Ltd.",
@@ -855,7 +855,7 @@ const productDatabase = {
   },
 
   // 15. SOLAR MOUNTING STRUCTURES
-  "rooftop-solar-structure--residential": {
+  "residential-rooftop-solar-structure": {
     name: "Rooftop Solar Structure – Residential",
     category: "Solar Mounting Structures",
     company: "Solarica Fabtech Pvt. Ltd.",
@@ -865,7 +865,7 @@ const productDatabase = {
     image: "products/solar-structures/rooftop-solar-structure--residential.png",
     basePrice: "On Request", installation: "Site Based", warranty: "10 Years"
   },
-  "rooftop-solar-structure--commercial": {
+  "commercial-rooftop-solar-structure": {
     name: "Rooftop Solar Structure – Commercial",
     category: "Solar Mounting Structures",
     company: "Solarica Fabtech Pvt. Ltd.",
@@ -937,7 +937,7 @@ const productDatabase = {
     image: "products/industrial-works/warehouse-shed-structure.jpg",
     basePrice: "On Request", installation: "Site Based", warranty: "15 Years"
   },
-  "solar-plant-installation-work": {
+  "solar-plant-installation-service": {
     name: "Solar Plant Installation Work",
     category: "Industrial Fabrication & Works",
     company: "Solarica Fabtech Pvt. Ltd.",
@@ -983,7 +983,7 @@ const productDatabase = {
   // ==================================================
 
   // 17. ELECTRIC VEHICLE CHARGERS
-  "home-ev-charger--3.3kw": {
+  "home-ev-charger-3-3kw": {
     name: "Home EV Charger – 3.3kW",
     category: "Electric Vehicle Chargers",
     company: "Solarica Greenwheels Pvt. Ltd.",
@@ -993,7 +993,7 @@ const productDatabase = {
     image: "products/ev-chargers/home-ev-charger-3.3kw.jpeg",
     basePrice: "On Request", installation: "Optional", warranty: "2 Years"
   },
-  "smart-ev-charger--7.4kw": {
+  "smart-ev-charger-7-4kw": {
     name: "Home EV Charger – 7.4kW",
     category: "Electric Vehicle Chargers",
     company: "Solarica Greenwheels Pvt. Ltd.",
@@ -1003,7 +1003,7 @@ const productDatabase = {
     image: "products/ev-chargers/smart-ev-charger-7.4kw.webp",
     basePrice: "On Request", installation: "As per site", warranty: "3 Years"
   },
-  "portable-ev-charger--3kw": {
+  "portable-ev-charger-3kw": {
     name: "Portable EV Charger – 3kW",
     category: "Electric Vehicle Chargers",
     company: "Solarica Greenwheels Pvt. Ltd.",
@@ -1023,7 +1023,7 @@ const productDatabase = {
     image: "products/ev-chargers/smart-socket-ev-charger.webp",
     basePrice: "On Request", installation: "Not Required", warranty: "1 Year"
   },
-  "wallbox-ev-charger--11kw": {
+  "wallbox-ev-charger-11kw": {
     name: "Wallbox EV Charger – 11kW",
     category: "Electric Vehicle Chargers",
     company: "Solarica Greenwheels Pvt. Ltd.",
@@ -1033,7 +1033,7 @@ const productDatabase = {
     image: "products/ev-chargers/wallbox-ev-charger-11kw.jpg",
     basePrice: "On Request", installation: "Site Based", warranty: "2 Years"
   },
-  "type-2-charging-cable": {
+  "type-2-ev-charging-cable": {
     name: "Type-2 Charging Cable",
     category: "Electric Vehicle Chargers",
     company: "Solarica Greenwheels Pvt. Ltd.",
@@ -1045,7 +1045,7 @@ const productDatabase = {
   },
 
   // 18. EV charging-station
-  "commercial-ac-charger--22kw": {
+  "commercial-ac-charger-22kw": {
     name: "Commercial AC Charger – 22kW",
     category: "Charging Stations",
     company: "Solarica Greenwheels Pvt. Ltd.",
@@ -1055,7 +1055,7 @@ const productDatabase = {
     image: "products/charging-station/commercial-ac-charger-22kw.jpeg",
     basePrice: "On Request", installation: "Commercial Setup", warranty: "3 Years"
   },
-  "dc-fast-charger--30kw": {
+  "dc-fast-ev-charger-30kw": {
     name: "DC Fast Charger – 30kW",
     category: "Charging Stations",
     company: "Solarica Greenwheels Pvt. Ltd.",
@@ -1065,7 +1065,7 @@ const productDatabase = {
     image: "products/charging-station/dc-fast-charger-30kw.jpeg",
     basePrice: "On Request", installation: "Site Based", warranty: "3 Years"
   },
-  "ultra-fast-ev-charger--60kw": {
+  "ultra-fast-ev-charger-60kw": {
     name: "Ultra Fast EV Charger – 60kW",
     category: "Charging Stations",
     company: "Solarica Greenwheels Pvt. Ltd.",
@@ -1075,7 +1075,7 @@ const productDatabase = {
     image: "products/charging-station/ultra-fast-ev-charger-60kw.jpg",
     basePrice: "On Request", installation: "Turnkey", warranty: "5 Years"
   },
-  "public-ev-charging-station--dual-gun": {
+  "public-ev-charging-station-dual-gun": {
     name: "Public EV Charging Station – Dual Gun",
     category: "Charging Stations",
     company: "Solarica Greenwheels Pvt. Ltd.",
@@ -1107,7 +1107,7 @@ const productDatabase = {
   },
 
   // 19. ELECTRIC VEHICLE BATTERIES
-  "lithium-ev-battery--48v-50ah": {
+  "lithium-ev-battery-48v-50ah": {
     name: "Lithium EV Battery – 48V 50Ah",
     category: "Electric Vehicle Battery Systems",
     company: "Solarica Greenwheels Pvt. Ltd.",
@@ -1117,7 +1117,7 @@ const productDatabase = {
     image: "products/ev-batteries/lithium-ev-battery-48v-50ah.webp",
     basePrice: "On Request", installation: "Plug & Play", warranty: "3 Years"
   },
-  "lithium-ev-battery--60v-60ah": {
+  "lithium-ev-battery-60v-60ah": {
     name: "Lithium EV Battery – 60V 60Ah",
     category: "Electric Vehicle Battery Systems",
     company: "Solarica Greenwheels Pvt. Ltd.",
@@ -1127,7 +1127,7 @@ const productDatabase = {
     image: "products/ev-batteries/lithium-ev-battery-60v-60ah.jpeg",
     basePrice: "On Request", installation: "Vehicle Fitment", warranty: "3 Years"
   },
-  "ev-battery-pack--72v-80ah": {
+  "ev-battery-pack-72v-80ah": {
     name: "EV Battery Pack – 72V 80Ah",
     category: "Electric Vehicle Battery Systems",
     company: "Solarica Greenwheels Pvt. Ltd.",
@@ -1137,7 +1137,7 @@ const productDatabase = {
     image: "products/ev-batteries/ev-battery-pack-72v-80ah.jpeg",
     basePrice: "On Request", installation: "Custom Fitment", warranty: "4 Years"
   },
-  "commercial-ev-battery--96v": {
+  "commercial-ev-battery-96v": {
     name: "Commercial EV Battery – 96V",
     category: "Electric Vehicle Battery Systems",
     company: "Solarica Greenwheels Pvt. Ltd.",
@@ -1147,7 +1147,7 @@ const productDatabase = {
     image: "products/ev-batteries/commercial-ev-battery-96v.webp",
     basePrice: "On Request", installation: "Vehicle Integration", warranty: "5 Years"
   },
-  "home-energy-storage-battery--5kwh": {
+  "home-energy-storage-battery-5kwh": {
     name: "Home Energy Storage Battery – 5kWh",
     category: "Electric Vehicle Battery Systems",
     company: "Solarica Greenwheels Pvt. Ltd.",
@@ -1157,7 +1157,7 @@ const productDatabase = {
     image: "products/ev-batteries/home-energy-storage-battery-5kwh.webp",
     basePrice: "On Request", installation: "Wall Mount", warranty: "5 Years"
   },
-  "portable-power-battery--1kwh": {
+  "portable-power-battery-1kwh": {
     name: "Portable Power Battery – 1kWh",
     category: "Electric Vehicle Battery Systems",
     company: "Solarica Greenwheels Pvt. Ltd.",
@@ -1173,7 +1173,7 @@ const productDatabase = {
   // ==================================================
 
   // 20. ANNUAL MAINTENANCE CONTRACTS
-  "solar-rooftop-amc--basic": {
+  "solar-rooftop-amc-basic": {
     name: "Solar Rooftop AMC – Basic",
     category: "Annual Maintenance Contracts",
     company: "Solarica Systems Pvt. Ltd.",
@@ -1183,7 +1183,7 @@ const productDatabase = {
     image: "products/amc-services/solar-rooftop-amc--basic.jpeg",
     basePrice: "On Request", installation: "Included", warranty: "1 Year"
   },
-  "solar-rooftop-amc--premium": {
+  "solar-rooftop-amc-premium": {
     name: "Solar Rooftop AMC – Premium",
     category: "Annual Maintenance Contracts",
     company: "Solarica Systems Pvt. Ltd.",
@@ -1193,7 +1193,7 @@ const productDatabase = {
     image: "products/amc-services/solar-rooftop-amc--premium.jpg",
     basePrice: "On Request", installation: "Included", warranty: "1 Year"
   },
-  "ev-charger-amc--standard": {
+  "ev-charger-amc-standard": {
     name: "EV Charger AMC – Standard",
     category: "Annual Maintenance Contracts",
     company: "Solarica Systems Pvt. Ltd.",
@@ -1203,7 +1203,7 @@ const productDatabase = {
     image: "products/amc-services/ev-charger-amc--standard.jpeg",
     basePrice: "On Request", installation: "Included", warranty: "1 Year"
   },
-  "ev-charging-station-amc--premium": {
+  "ev-charging-station-amc-premium": {
     name: "EV Charging Station AMC – Premium",
     category: "Annual Maintenance Contracts",
     company: "Solarica Systems Pvt. Ltd.",
@@ -1213,7 +1213,7 @@ const productDatabase = {
     image: "products/amc-services/ev-charging-station-amc--premium.jpeg",
     basePrice: "On Request", installation: "Included", warranty: "1 Year"
   },
-  "industrial-electrical-amc": {
+  "industrial-electrical-amc-services": {
     name: "Industrial Electrical AMC",
     category: "Annual Maintenance Contracts",
     company: "Solarica Systems Pvt. Ltd.",
@@ -1223,7 +1223,7 @@ const productDatabase = {
     image: "products/amc-services/industrial-electrical-amc.jpg",
     basePrice: "On Request", installation: "Included", warranty: "1 Year"
   },
-  "solar-plant-om-contract": {
+  "solar-plant-om-amc": {
     name: "Solar Plant O&M Contract",
     category: "Annual Maintenance Contracts",
     company: "Solarica Systems Pvt. Ltd.",

@@ -6,15 +6,15 @@ document.addEventListener("DOMContentLoaded", () => {
     const pageMap = {
         "index.html": "Home",
         "products.html": "products",
-        "we-solarica.html": "We Solarica",
+        "who-we-are.html": "We Solarica",
         "our-journey.html": "Our Journey",
         "our-companies.html": "Our Companies",
-        "leadership.html": "Board of Directors",
-        "awards.html": "Awards & Certifications",
-        "pm-surya-ghar.html": "PM Surya Ghar Yojana",
-        "kusum-yojana.html": "KUSUM Yojana",
-        "saur-krushi-pump.html": "Saur Krushi Pump Yojana",
-        "commercial-projects.html": "Commercial Setups",
+        "board-of-directors.html": "Board of Directors",
+        "awards-and-certifications.html": "Awards & Certifications",
+        "pm-surya-ghar-yojana.html": "PM Surya Ghar Yojana",
+        "pm-kusum-yojana-solar-pump-scheme.html": "KUSUM Yojana",
+        "saur-krushi-yojana-solar-pump.html": "Saur Krushi Pump Yojana",
+        "commercial-solar-projects.html": "Commercial Setups",
         "industrial-projects.html": "Industrial Setups",
         "power-projects.html": "Power Projects",
         "contact.html": "Contact Us",
@@ -28,16 +28,16 @@ document.addEventListener("DOMContentLoaded", () => {
         "solar-water-heater.html": "Solar Water Heaters",
         "solar-structures.html": "Solar Mounting Structures",
         "solar-panels.html": "Solar Panels",
-        "ac-lights.html": "AC Lights",
+        "ac-led-lights.html": "AC Lights",
         "home-lights.html": "Home Lights",
-        "control-panels.html": "Control Panels",
+        "solar-control-panels-automation.html": "Control Panels",
         "ev-chargers.html": "EV Chargers",
         "ev-batteries.html": "EV Batteries",
         "poles.html": "Lighting Poles",
         "light-accessories.html": "Light Accessories",
-        "charging-station.html": "Charging Stations",
+        "ev-charging-stations.html": "Charging Stations",
         "industrial-works.html": "Industrial Fabrication & Works",
-        "amc-services.html": "AMC & Maintenance Services"
+        "solar-amc-services.html": "AMC & Maintenance Services"
     };
 
     // 2. Parse the current browser navigation details
@@ -73,16 +73,16 @@ document.addEventListener("DOMContentLoaded", () => {
             "solar-water-heater.html",
             "solar-structures.html",
             "solar-panels.html",
-            "ac-lights.html",
+            "ac-led-lights.html",
             "home-lights.html",
-            "control-panels.html",
+            "solar-control-panels-automation.html",
             "ev-chargers.html",
             "ev-batteries.html",
             "poles.html",
             "light-accessories.html",
-            "charging-station.html",
+            "ev-charging-stations.html",
             "industrial-works.html",
-            "amc-services.html"
+            "solar-amc-services.html"
         ].includes(pageFile)) {
             const displayTitle = pageMap[pageFile] || pageFile.replace(".html", "").replace("-", " ");
             breadcrumbHtml += `<li class="breadcrumb-item"><a href="products.html">products</a></li>`;
@@ -91,10 +91,10 @@ document.addEventListener("DOMContentLoaded", () => {
         
         // CASE C: Projects and Schemes sub-pages
         else if ([
-            "pm-surya-ghar.html",
-            "kusum-yojana.html",
-            "saur-krushi-pump.html",
-            "commercial-projects.html",
+            "pm-surya-ghar-yojana.html",
+            "pm-kusum-yojana-solar-pump-scheme.html",
+            "saur-krushi-yojana-solar-pump.html",
+            "commercial-solar-projects.html",
             "industrial-projects.html",
             "power-projects.html"
         ].includes(pageFile)) {
@@ -105,14 +105,14 @@ document.addEventListener("DOMContentLoaded", () => {
         
         // CASE D: About Us sub-pages
         else if ([
-            "we-solarica.html",
+            "who-we-are.html",
             "our-journey.html",
             "our-companies.html",
-            "leadership.html",
-            "awards.html"
+            "board-of-directors.html",
+            "awards-and-certifications.html"
         ].includes(pageFile)) {
             const displayTitle = pageMap[pageFile] || pageFile.replace(".html", "").replace("-", " ");
-            breadcrumbHtml += `<li class="breadcrumb-item"><a href="about.html">About Us</a></li>`;
+            breadcrumbHtml += `<li class="breadcrumb-item"><a href="about-solarica-groups.html">About Us</a></li>`;
             breadcrumbHtml += `<li class="breadcrumb-item active">${displayTitle}</li>`;
         }
         

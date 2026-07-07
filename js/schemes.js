@@ -1,6 +1,6 @@
 // --- MASTER DATA DATABASE ---
 const schemesData = {
-    "pm-surya-ghar": {
+    "pm-surya-ghar-yojana": {
         type: "govt-scheme", theme: "orange",
         title: "PM Surya Ghar", subtitle: "Muft Bijli Yojana",
         tagline: "Empowering 1 crore households with free solar electricity — lighting homes, saving energy, and building a sustainable future for India.",
@@ -40,7 +40,7 @@ const schemesData = {
             { date: "30 Jul", text: "Clarification: Ground Mounted Structures." }
         ]
     },
-    "kusum-yojana": {
+    "pm-kusum-yojana-solar-pump-scheme": {
         type: "govt-scheme", theme: "green",
         title: "PM-KUSUM", subtitle: "Yojana",
         tagline: "Empowering farmers with solar energy — irrigation, income generation, and energy independence.",
