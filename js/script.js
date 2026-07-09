@@ -14,38 +14,7 @@ document.addEventListener("DOMContentLoaded", () => {
     }
     requestAnimationFrame(raf);
 
-    // --- 2. CUSTOM CURSOR PHYSICS ---
-    const dot = document.getElementById("cursor-dot");
-    const ring = document.getElementById("cursor-ring");
-    
-    let mouseX = 0, mouseY = 0;
-    let ringX = 0, ringY = 0;
-    
-    window.addEventListener("mousemove", (e) => {
-        mouseX = e.clientX;
-        mouseY = e.clientY;
-        
-        // Dot moves instantly
-        if(dot) {
-            dot.style.opacity = 1;
-            dot.style.left = mouseX + "px";
-            dot.style.top = mouseY + "px";
-        }
-        if(ring) ring.style.opacity = 1;
-    });
-
-    // Lerp function for the trailing ring
-    function animateCursor() {
-        ringX += (mouseX - ringX) * 0.15;
-        ringY += (mouseY - ringY) * 0.15;
-        
-        if(ring) {
-            ring.style.left = ringX + "px";
-            ring.style.top = ringY + "px";
-        }
-        requestAnimationFrame(animateCursor);
-    }
-    requestAnimationFrame(animateCursor);
+    // --- 2. CUSTOM CURSOR PHYSICS (Handled globally by cursor.js to prevent conflicts) ---
 
 
     // --- 3. FETCH FOOTER ONLY (Navbar is handled by navbar.js now!) ---
