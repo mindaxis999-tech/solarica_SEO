@@ -11,6 +11,7 @@ document.addEventListener("DOMContentLoaded", () => {
         "our-companies.html": "Our Companies",
         "board-of-directors.html": "Board of Directors",
         "awards-and-certifications.html": "Awards & Certifications",
+        "projects.html": "Projects & Schemes",
         "pm-surya-ghar-yojana.html": "PM Surya Ghar Yojana",
         "pm-kusum-yojana-solar-pump-scheme.html": "KUSUM Yojana",
         "saur-krushi-yojana-solar-pump.html": "Saur Krushi Pump Yojana",
@@ -99,7 +100,7 @@ document.addEventListener("DOMContentLoaded", () => {
             "power-projects.html"
         ].includes(pageFile)) {
             const displayTitle = pageMap[pageFile] || pageFile.replace(".html", "").replace("-", " ");
-            breadcrumbHtml += `<li class="breadcrumb-item">Projects & Schemes</li>`;
+            breadcrumbHtml += `<li class="breadcrumb-item"><a href="projects.html">Projects & Schemes</a></li>`;
             breadcrumbHtml += `<li class="breadcrumb-item active">${displayTitle}</li>`;
         }
         
