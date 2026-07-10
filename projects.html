@@ -5,13 +5,52 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Solar Projects & Government Schemes | Solarica Group</title>
-    <meta name="description" content="Explore Solarica Group's solar energy projects and initiatives, including government schemes (PM Surya Ghar, KUSUM, Saur Krushi) and commercial, industrial, and utility-scale installations.">
-    
+    <meta name="description"
+        content="Explore Solarica Group's solar energy projects and initiatives, including government schemes (PM Surya Ghar, KUSUM, Saur Krushi) and commercial, industrial, and utility-scale installations.">
+    <!--schema-->
+    <script type="application/ld+json">
+{        
+"@context" : "https://schema.org",        
+"@type" : "CollectionPage",        
+"name" : "Projects",        
+"url" : "https://solaricagroups.com/projects.html",        
+"description" : "Explore Solarica Groups projects including PM Surya Ghar, Kusum Yojana, Saur Krushi Pump, Commercial Projects, Industrial Projects, and Power Projects. We deliver reliable solar energy solutions for residential, commercial, industrial, agricultural, and utility-scale applications.",        
+"image" : "https://solaricagroups.com/assets/images/logoo.png",        
+"publisher" : {        
+"@type" : "Organization",        
+"name" : "Solarica Groups",        
+"logo" : {        
+"@type" : "ImageObject",        
+"url" : "https://solaricagroups.com/assets/images/logoo.png"        
+}        
+}        
+}        
+</script>
+
+
+
+    <script type="application/ld+json">
+{        
+"@context" : "https://schema.org",        
+"@type" : "BreadcrumbList",        
+"itemListElement" : [{        
+"@type" : "ListItem",        
+"position" : 1,        
+"name" : "Home",        
+"item" : "https://solaricagroups.com/"        
+},{        
+"@type" : "ListItem",        
+"position" : 2,        
+"name" : "Projects",        
+"item" : "https://solaricagroups.com/projects.html"        
+}]        
+}        
+</script>
     <!--canonical-->
     <link rel="canonical" href="https://solaricagroups.com/projects.html" />
 
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
-    
+
     <link rel="stylesheet" href="css/navbar.css?v=2">
     <link rel="stylesheet" href="css/footer.css">
     <link rel="stylesheet" href="css/cursor.css">
@@ -30,22 +69,26 @@
             margin-bottom: 3rem;
             margin-top: 1rem;
         }
+
         .projects-grid {
             display: grid;
             grid-template-columns: 1fr;
             gap: 2rem;
             margin-bottom: 4rem;
         }
+
         @media (min-width: 768px) {
             .projects-grid {
                 grid-template-columns: repeat(2, 1fr);
             }
         }
+
         @media (min-width: 1024px) {
             .projects-grid {
                 grid-template-columns: repeat(3, 1fr);
             }
         }
+
         .project-card {
             background: rgba(255, 255, 255, 0.95);
             backdrop-filter: blur(12px);
@@ -61,6 +104,7 @@
             height: 100%;
             box-sizing: border-box;
         }
+
         .project-card::before {
             content: '';
             position: absolute;
@@ -71,17 +115,33 @@
             background: transparent;
             transition: background 0.3s;
         }
-        .project-card.theme-orange::before { background: linear-gradient(90deg, #f97316, #eab308); }
-        .project-card.theme-green::before { background: linear-gradient(90deg, #16a34a, #10b981); }
-        .project-card.theme-blue::before { background: linear-gradient(90deg, #2563eb, #06b6d4); }
-        .project-card.theme-purple::before { background: linear-gradient(90deg, #9333ea, #8b5cf6); }
-        .project-card.theme-slate::before { background: linear-gradient(90deg, #334155, #64748b); }
+
+        .project-card.theme-orange::before {
+            background: linear-gradient(90deg, #f97316, #eab308);
+        }
+
+        .project-card.theme-green::before {
+            background: linear-gradient(90deg, #16a34a, #10b981);
+        }
+
+        .project-card.theme-blue::before {
+            background: linear-gradient(90deg, #2563eb, #06b6d4);
+        }
+
+        .project-card.theme-purple::before {
+            background: linear-gradient(90deg, #9333ea, #8b5cf6);
+        }
+
+        .project-card.theme-slate::before {
+            background: linear-gradient(90deg, #334155, #64748b);
+        }
 
         .project-card:hover {
             transform: translateY(-6px);
             box-shadow: 0 25px 40px -15px rgba(15, 23, 42, 0.1);
             border-color: rgba(226, 232, 240, 1);
         }
+
         .project-icon-box {
             width: 3.5rem;
             height: 3.5rem;
@@ -91,12 +151,14 @@
             justify-content: center;
             font-size: 1.5rem;
             margin-bottom: 1.5rem;
-            box-shadow: 0 8px 16px -4px rgba(0,0,0,0.04);
+            box-shadow: 0 8px 16px -4px rgba(0, 0, 0, 0.04);
             transition: transform 0.3s;
         }
+
         .project-card:hover .project-icon-box {
             transform: scale(1.08) rotate(3deg);
         }
+
         .project-card h3 {
             font-size: 1.35rem;
             font-weight: 800;
@@ -104,6 +166,7 @@
             margin: 0 0 0.5rem;
             line-height: 1.3;
         }
+
         .project-subtitle {
             font-size: 0.75rem;
             font-weight: 800;
@@ -111,6 +174,7 @@
             letter-spacing: 0.05em;
             margin-bottom: 1.25rem;
         }
+
         .project-desc {
             font-size: 0.9rem;
             color: #475569;
@@ -118,6 +182,7 @@
             margin: 0 0 2rem;
             flex-grow: 1;
         }
+
         .project-link {
             display: inline-flex;
             align-items: center;
@@ -128,6 +193,7 @@
             transition: gap 0.2s;
             margin-top: auto;
         }
+
         .project-link:hover {
             gap: 0.75rem;
         }
@@ -137,7 +203,7 @@
 <body class="bg-slate-50 font-sans text-slate-900 overflow-x-hidden">
     <!-- <div id="cursor-dot" class="custom-cursor-dot hidden-mobile"></div>
     <div id="cursor-ring" class="custom-cursor-ring hidden-mobile"></div> -->
-    
+
     <div id="navbar-placeholder"></div>
 
     <nav aria-label="breadcrumb" class="breadcrumb-nav">
@@ -153,12 +219,13 @@
     <main class="schemes-main">
         <div class="projects-header">
             <h1 class="hero-title" id="projects-title-h1">Our Projects & Schemes</h1>
-            <p class="hero-desc">Discover our comprehensive range of government-subsidized solar initiatives and customized private sector installations engineered for sustainability and maximum financial savings.</p>
+            <p class="hero-desc">Discover our comprehensive range of government-subsidized solar initiatives and
+                customized private sector installations engineered for sustainability and maximum financial savings.</p>
         </div>
 
         <h2 class="scheme-section-title text-orange-600" id="section-govt-schemes">Government Subsidy Schemes</h2>
         <div class="projects-grid">
-            
+
             <!-- PM Surya Ghar Yojana -->
             <div class="project-card theme-orange">
                 <div>
@@ -167,7 +234,8 @@
                     </div>
                     <h3>PM Surya Ghar Yojana</h3>
                     <div class="project-subtitle text-orange-600">Muft Bijli Yojana</div>
-                    <p class="project-desc">Empowering 1 crore households with free solar electricity. Receive up to Rs. 78,000 in direct government subsidies for rooftop installations.</p>
+                    <p class="project-desc">Empowering 1 crore households with free solar electricity. Receive up to Rs.
+                        78,000 in direct government subsidies for rooftop installations.</p>
                 </div>
                 <a href="pm-surya-ghar-yojana.html" class="project-link text-orange-600" id="link-pmsuryaghar">
                     Explore Details <i class="fa-solid fa-arrow-right"></i>
@@ -182,7 +250,8 @@
                     </div>
                     <h3>PM-KUSUM Scheme</h3>
                     <div class="project-subtitle text-green-600">Agricultural Solar Pump</div>
-                    <p class="project-desc">Providing energy security to Indian farmers. Transition standalone and grid-connected irrigation pumps to solar energy with up to 90% subsidy.</p>
+                    <p class="project-desc">Providing energy security to Indian farmers. Transition standalone and
+                        grid-connected irrigation pumps to solar energy with up to 90% subsidy.</p>
                 </div>
                 <a href="pm-kusum-yojana-solar-pump-scheme.html" class="project-link text-green-600" id="link-pmkusum">
                     Explore Details <i class="fa-solid fa-arrow-right"></i>
@@ -197,7 +266,8 @@
                     </div>
                     <h3>Saur Krushi Pump Yojana</h3>
                     <div class="project-subtitle text-green-600">State Solar Irrigation</div>
-                    <p class="project-desc">Eliminating agricultural energy bills. High subsidy rates (90-95%) for deploying standalone solar water pumps to guarantee daytime water availability.</p>
+                    <p class="project-desc">Eliminating agricultural energy bills. High subsidy rates (90-95%) for
+                        deploying standalone solar water pumps to guarantee daytime water availability.</p>
                 </div>
                 <a href="saur-krushi-yojana-solar-pump.html" class="project-link text-green-600" id="link-saurkrushi">
                     Explore Details <i class="fa-solid fa-arrow-right"></i>
@@ -217,7 +287,8 @@
                     </div>
                     <h3>Commercial Setups</h3>
                     <div class="project-subtitle text-blue-600">Enterprise Rooftops</div>
-                    <p class="project-desc">High-efficiency solar PV systems for enterprise properties and office complexes. Maximize operational savings and leverage accelerated depreciation benefits.</p>
+                    <p class="project-desc">High-efficiency solar PV systems for enterprise properties and office
+                        complexes. Maximize operational savings and leverage accelerated depreciation benefits.</p>
                 </div>
                 <a href="commercial-solar-projects.html" class="project-link text-blue-600" id="link-commercial">
                     Explore Details <i class="fa-solid fa-arrow-right"></i>
@@ -232,7 +303,8 @@
                     </div>
                     <h3>Industrial Setups</h3>
                     <div class="project-subtitle text-purple-600">Factory & Heavy Industry</div>
-                    <p class="project-desc">Engineered for heavy factories, manufacturing units, and automation lines. Support robust steel structures and reliable grid parallel solar setups.</p>
+                    <p class="project-desc">Engineered for heavy factories, manufacturing units, and automation lines.
+                        Support robust steel structures and reliable grid parallel solar setups.</p>
                 </div>
                 <a href="industrial-projects.html" class="project-link text-purple-600" id="link-industrial">
                     Explore Details <i class="fa-solid fa-arrow-right"></i>
@@ -247,7 +319,8 @@
                     </div>
                     <h3>Power Projects</h3>
                     <div class="project-subtitle text-slate-700">Utility-Scale Solar Parks</div>
-                    <p class="project-desc">EPC management for utility-scale grid-tied solar farms. End-to-end consulting, from site selection, land acquisition, to multi-megawatt substation engineering.</p>
+                    <p class="project-desc">EPC management for utility-scale grid-tied solar farms. End-to-end
+                        consulting, from site selection, land acquisition, to multi-megawatt substation engineering.</p>
                 </div>
                 <a href="power-projects.html" class="project-link text-slate-700" id="link-power">
                     Explore Details <i class="fa-solid fa-arrow-right"></i>
