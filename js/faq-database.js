@@ -2636,6 +2636,94 @@ const faqDatabase = {
       "a": "Solarica offers durable, efficient, and future-ready EV charging solutions with advanced safety features."
     }
   ],
+  "kusum-yojana": [
+    {
+      "q": "What is the KUSUM Yojana. Who is eligible?",
+      "a": "The KUSUM Yojana is a government scheme that helps farmers by giving them powered irrigation systems at a lower cost. The KUSUM Yojana is for farmers who are eligible for this scheme."
+    },
+    {
+      "q": "What are the benefits of the KUSUM Yojana for farmers?",
+      "a": "The KUSUM Yojana helps farmers in multiple ways. It reduces the cost of electricity. The KUSUM Yojana also promotes clean energy and gives farmers a reliable way to power their irrigation systems."
+    },
+    {
+      "q": "How can I apply for the KUSUM Yojana subsidy?",
+      "a": "To apply for the KUSUM Yojana subsidy you need to go through the agency that handles energy in your state. You can also apply online through the authorized portal for the KUSUM Yojana."
+    },
+    {
+      "q": "What documents are required for KUSUM Yojana application?",
+      "a": "When you apply for the KUSUM Yojana you will need some documents. These include proof of identity, documents that show you own the land, your bank details, and a certificate that shows you are eligible for the KUSUM Yojana."
+    },
+    {
+      "q": "Why choose the KUSUM Yojana for agricultural solar pump installation?",
+      "a": "The KUSUM Yojana is a choice for farmers because it offers a subsidy from the government. This means you will not have to pay much for the solar pump. The KUSUM Yojana also helps farmers save money in the long run because solar power is a clean and sustainable way to irrigate your land, reducing the cost of operating the pump."
+    }
+  ],
+  "pm-kusum-yojana-solar-pump-scheme": [
+    {
+      "q": "What is the KUSUM Yojana. Who is eligible?",
+      "a": "The KUSUM Yojana is a government scheme that helps farmers by giving them powered irrigation systems at a lower cost. The KUSUM Yojana is for farmers who are eligible for this scheme."
+    },
+    {
+      "q": "What are the benefits of the KUSUM Yojana for farmers?",
+      "a": "The KUSUM Yojana helps farmers in multiple ways. It reduces the cost of electricity. The KUSUM Yojana also promotes clean energy and gives farmers a reliable way to power their irrigation systems."
+    },
+    {
+      "q": "How can I apply for the KUSUM Yojana subsidy?",
+      "a": "To apply for the KUSUM Yojana subsidy you need to go through the agency that handles energy in your state. You can also apply online through the authorized portal for the KUSUM Yojana."
+    },
+    {
+      "q": "What documents are required for KUSUM Yojana application?",
+      "a": "When you apply for the KUSUM Yojana you will need some documents. These include proof of identity, documents that show you own the land, your bank details, and a certificate that shows you are eligible for the KUSUM Yojana."
+    },
+    {
+      "q": "Why choose the KUSUM Yojana for agricultural solar pump installation?",
+      "a": "The KUSUM Yojana is a choice for farmers because it offers a subsidy from the government. This means you will not have to pay much for the solar pump. The KUSUM Yojana also helps farmers save money in the long run because solar power is a clean and sustainable way to irrigate your land, reducing the cost of operating the pump."
+    }
+  ],
+  "industrial": [
+    {
+      "q": "What do industrial projects services include?",
+      "a": "Industrial projects services cover planning, engineering, installation, commissioning and maintenance for infrastructure projects."
+    },
+    {
+      "q": "Which industries benefit from industrial project execution services?",
+      "a": "Manufacturing industry, Power sector, Pharmaceuticals industry, Food processing industry, Automotive industry, and Chemical industry are benefited."
+    },
+    {
+      "q": "Why choose industrial project management services?",
+      "a": "It ensures projects get done on time. They follow safety rules and execute projects in a cost-effective way."
+    },
+    {
+      "q": "What should I consider before hiring an industrial projects contractor?",
+      "a": "You should look at their experience and technical skills. Check their certificates, projects, and how long they take to finish projects. Also consider their support after the project is done."
+    },
+    {
+      "q": "How do industrial project services improve efficiency?",
+      "a": "Industrial project services make infrastructure work better. They help reduce downtime and make production more productive, ensuring things work well for a long time."
+    }
+  ],
+  "industrial-projects": [
+    {
+      "q": "What do industrial projects services include?",
+      "a": "Industrial projects services cover planning, engineering, installation, commissioning and maintenance for infrastructure projects."
+    },
+    {
+      "q": "Which industries benefit from industrial project execution services?",
+      "a": "Manufacturing industry, Power sector, Pharmaceuticals industry, Food processing industry, Automotive industry, and Chemical industry are benefited."
+    },
+    {
+      "q": "Why choose industrial project management services?",
+      "a": "It ensures projects get done on time. They follow safety rules and execute projects in a cost-effective way."
+    },
+    {
+      "q": "What should I consider before hiring an industrial projects contractor?",
+      "a": "You should look at their experience and technical skills. Check their certificates, projects, and how long they take to finish projects. Also consider their support after the project is done."
+    },
+    {
+      "q": "How do industrial project services improve efficiency?",
+      "a": "Industrial project services make infrastructure work better. They help reduce downtime and make production more productive, ensuring things work well for a long time."
+    }
+  ],
   "warehouse-shed-structure": [
     {
       "q": "What is a Warehouse Shed Structure used for?",

@@ -66,3 +66,20 @@ tr:hover { background-color: rgba(248,250,252,0.5); }
 .text-blue-600 { color: #2563eb; } .bg-blue-50 { background-color: #eff6ff; } .border-blue-200 { border-color: #bfdbfe; } .from-blue-600 { background-image: linear-gradient(to right, #2563eb, #06b6d4); } .text-blue-700 { color: #1d4ed8; }
 .text-purple-600 { color: #9333ea; } .bg-purple-50 { background-color: #faf5ff; } .border-purple-200 { border-color: #e9d5ff; } .from-purple-600 { background-image: linear-gradient(to right, #9333ea, #8b5cf6); } .text-purple-700 { color: #7e22ce; }
 .text-slate-600 { color: #475569; } .bg-slate-100 { background-color: #f1f5f9; } .border-slate-300 { border-color: #cbd5e1; } .from-slate-700 { background-image: linear-gradient(to right, #334155, #0f172a); } .text-slate-700 { color: #334155; }
+
+/* =========================================
+   FAQ ACCORDION SECTION
+   ========================================= */
+.faq-section { margin-top: 5rem; margin-bottom: 6rem; width: 100%; }
+.faq-subtitle { font-size: 0.75rem; font-weight: 700; text-transform: uppercase; letter-spacing: 0.1em; display: block; margin-bottom: 0.5rem; }
+.faq-title { font-size: 1.875rem; font-weight: 900; margin: 0 0 2.5rem 0; color: #0f172a; border-bottom: 1px solid #e2e8f0; padding-bottom: 1.5rem; }
+.faq-list { display: flex; flex-direction: column; gap: 1.25rem; }
+.faq-item { background: white; border: 1px solid #f1f5f9; border-radius: 1.5rem; box-shadow: 0 1px 2px 0 rgba(0,0,0,0.05); overflow: hidden; transition: all 0.3s ease; }
+.faq-item:hover { box-shadow: 0 15px 20px -5px rgba(0,0,0,0.05); border-color: #e2e8f0; transform: translateY(-2px); }
+.faq-question { width: 100%; display: flex; justify-content: space-between; align-items: center; padding: 1.5rem; background: none; border: none; text-align: left; font-size: 1.15rem; font-weight: 700; color: #1e293b; cursor: pointer; transition: color 0.3s; }
+.faq-question:hover { color: #0f172a; }
+.faq-chevron { font-size: 0.875rem; transition: transform 0.3s ease; margin-left: 1rem; flex-shrink: 0; }
+.faq-answer { max-height: 0; overflow: hidden; transition: max-height 0.35s ease, padding 0.35s ease; padding: 0 1.5rem; color: #475569; font-size: 1rem; line-height: 1.7; font-weight: 500; }
+.faq-item.active { border-color: inherit; }
+.faq-item.active .faq-chevron { transform: rotate(180deg); }
+.faq-item.active .faq-answer { padding-bottom: 1.5rem; }

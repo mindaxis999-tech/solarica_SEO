@@ -160,7 +160,10 @@ const schemesData = {
 // --- LOGIC TO BUILD PAGE ---
 document.addEventListener("DOMContentLoaded", () => {
     // 1. Get the slug from the HTML body attribute
-    const slug = document.body.getAttribute("data-slug");
+    let slug = document.body.getAttribute("data-slug");
+    if (slug === "pm-surya-ghar") slug = "pm-surya-ghar-yojana";
+    if (slug === "kusum-yojana") slug = "pm-kusum-yojana-solar-pump-scheme";
+    
     const data = schemesData[slug];
 
     if (!data) return; // Fail silently if no data matched
@@ -265,4 +268,82 @@ document.addEventListener("DOMContentLoaded", () => {
         `).join('');
         document.getElementById("capacity-grid").innerHTML = capHtml;
     }
+
+    // 9. Load and Render FAQs dynamically
+    const loadAndRenderFAQs = () => {
+        const script = document.createElement("script");
+        script.src = "js/faq-database.js";
+        script.onload = () => {
+            if (typeof faqDatabase !== "undefined" && faqDatabase[slug]) {
+                const productFaqs = faqDatabase[slug];
+                const container = document.getElementById("faq-section-container");
+                if (container && productFaqs.length > 0) {
+                    const faqSection = document.createElement("section");
+                    faqSection.className = "faq-section";
+                    
+                    let faqItemsHtml = "";
+                    productFaqs.forEach((faq) => {
+                        faqItemsHtml += `
+                            <div class="faq-item" style="border-color: #f1f5f9;">
+                                <button class="faq-question">
+                                    <span>${faq.q}</span>
+                                    <i class="fa-solid fa-chevron-down faq-chevron ${colors.text}"></i>
+                                </button>
+                                <div class="faq-answer">
+                                    <p>${faq.a}</p>
+                                </div>
+                            </div>
+                        `;
+                    });
+
+                    faqSection.innerHTML = `
+                        <span class="faq-subtitle ${colors.text}">Frequently Asked Questions</span>
+                        <h2 class="faq-title">FAQ</h2>
+                        <div class="faq-list">
+                            ${faqItemsHtml}
+                        </div>
+                    `;
+
+                    container.appendChild(faqSection);
+
+                    // Add click listeners for accordion functionality
+                    const faqItems = faqSection.querySelectorAll(".faq-item");
+                    faqItems.forEach(item => {
+                        const questionBtn = item.querySelector(".faq-question");
+                        const answerPanel = item.querySelector(".faq-answer");
+                        
+                        questionBtn.addEventListener("click", () => {
+                            const isActive = item.classList.contains("active");
+                            
+                            // Close other items
+                            faqItems.forEach(otherItem => {
+                                otherItem.classList.remove("active");
+                                otherItem.style.borderColor = "#f1f5f9";
+                                otherItem.querySelector(".faq-answer").style.maxHeight = null;
+                            });
+                            
+                            if (!isActive) {
+                                item.classList.add("active");
+                                // Match border color to theme color dynamically
+                                let activeBorderColor = "#ea580c"; // default orange
+                                if (data.theme === 'green') activeBorderColor = "#16a34a";
+                                else if (data.theme === 'blue') activeBorderColor = "#2563eb";
+                                else if (data.theme === 'purple') activeBorderColor = "#9333ea";
+                                else if (data.theme === 'slate') activeBorderColor = "#475569";
+                                item.style.borderColor = activeBorderColor;
+                                answerPanel.style.maxHeight = answerPanel.scrollHeight + "px";
+                            } else {
+                                item.classList.remove("active");
+                                item.style.borderColor = "#f1f5f9";
+                                answerPanel.style.maxHeight = null;
+                            }
+                        });
+                    });
+                }
+            }
+        };
+        document.head.appendChild(script);
+    };
+
+    loadAndRenderFAQs();
 });
