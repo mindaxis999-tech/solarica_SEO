@@ -72,6 +72,28 @@
     <link rel="icon" type="image/png" sizes="32x32" href="assets/images/favicon/favicon-32x32.png">
     <link rel="icon" type="image/png" sizes="16x16" href="assets/images/favicon/favicon-16x16.png">
     <link rel="manifest" href="assets/images/favicon/site.webmanifest">
+    <style>
+        #capacity-grid.capacity-grid {
+            grid-template-columns: repeat(3, 1fr) !important;
+            gap: 1rem !important;
+        }
+        #capacity-grid .cap-card {
+            padding: 1.25rem !important;
+            border-radius: 1.25rem !important;
+        }
+        #capacity-grid .cap-card h3 {
+            font-size: 1.1rem !important;
+            margin-bottom: 0.5rem !important;
+        }
+        #capacity-grid .cap-card p {
+            font-size: 0.8rem !important;
+        }
+        @media (max-width: 768px) {
+            #capacity-grid.capacity-grid {
+                grid-template-columns: 1fr !important;
+            }
+        }
+    </style>
 </head>
 
 <body data-slug="saur-krushi-pump-yojana">
