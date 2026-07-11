@@ -168,4 +168,93 @@ document.addEventListener("DOMContentLoaded", () => {
             </div>
         `;
     }
+    if (product.warranty) {
+        specsGrid.innerHTML += `
+            <div class="spec-card spec-card-green group">
+                <div class="spec-icon-box spec-icon-green"><i class="fa-solid fa-shield-halved text-xl"></i></div>
+                <div class="spec-text-box">
+                    <h4 class="spec-label">Warranty</h4>
+                    <p class="spec-value">${product.warranty}</p>
+                </div>
+            </div>
+        `;
+    }
+
+    // 8. Load and Render FAQs dynamically
+    const loadAndRenderFAQs = () => {
+        const script = document.createElement("script");
+        script.src = "js/faq-database.js";
+        script.onload = () => {
+            if (typeof faqDatabase !== "undefined" && faqDatabase[slug]) {
+                const productFaqs = faqDatabase[slug];
+                const bottomBanner = document.querySelector(".bottom-banner");
+                if (bottomBanner && productFaqs.length > 0) {
+                    const faqSection = document.createElement("section");
+                    faqSection.className = "faq-section";
+                    
+                    let faqItemsHtml = "";
+                    productFaqs.forEach((faq) => {
+                        faqItemsHtml += `
+                            <div class="faq-item" style="border-color: #f1f5f9;">
+                                <button class="faq-question">
+                                    <span>${faq.q}</span>
+                                    <i class="fa-solid fa-chevron-down faq-chevron ${themeText}"></i>
+                                </button>
+                                <div class="faq-answer">
+                                    <p>${faq.a}</p>
+                                </div>
+                            </div>
+                        `;
+                    });
+
+                    faqSection.innerHTML = `
+                        <span class="faq-subtitle ${themeText}">Frequently Asked Questions</span>
+                        <h2 class="faq-title">FAQ</h2>
+                        <div class="faq-list">
+                            ${faqItemsHtml}
+                        </div>
+                    `;
+
+                    // Insert before the bottom banner
+                    bottomBanner.parentNode.insertBefore(faqSection, bottomBanner);
+
+                    // Add click listeners for accordion functionality
+                    const faqItems = faqSection.querySelectorAll(".faq-item");
+                    faqItems.forEach(item => {
+                        const questionBtn = item.querySelector(".faq-question");
+                        const answerPanel = item.querySelector(".faq-answer");
+                        
+                        questionBtn.addEventListener("click", () => {
+                            const isActive = item.classList.contains("active");
+                            
+                            // Close other items
+                            faqItems.forEach(otherItem => {
+                                otherItem.classList.remove("active");
+                                otherItem.style.borderColor = "#f1f5f9";
+                                otherItem.querySelector(".faq-answer").style.maxHeight = null;
+                            });
+                            
+                            if (!isActive) {
+                                item.classList.add("active");
+                                // Match border color to theme color dynamically
+                                let activeBorderColor = "#ea580c"; // default orange
+                                if (comp.includes("Fabtech")) activeBorderColor = "#9333ea";
+                                else if (comp.includes("Greenwheels")) activeBorderColor = "#059669";
+                                else if (comp.includes("Systems")) activeBorderColor = "#2563eb";
+                                item.style.borderColor = activeBorderColor;
+                                answerPanel.style.maxHeight = answerPanel.scrollHeight + "px";
+                            } else {
+                                item.classList.remove("active");
+                                item.style.borderColor = "#f1f5f9";
+                                answerPanel.style.maxHeight = null;
+                            }
+                        });
+                    });
+                }
+            }
+        };
+        document.head.appendChild(script);
+    };
+
+    loadAndRenderFAQs();
 });

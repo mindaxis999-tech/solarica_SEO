@@ -119,3 +119,20 @@ a { text-decoration: none; }
 .text-blue-600 { color: #2563eb; } .bg-blue-50 { background-color: #eff6ff; } .bg-blue-600 { background-color: #2563eb; } .hover-bg-blue-700:hover { background-color: #1d4ed8; } .bg-blue-500-10 { background-color: rgba(59, 130, 246, 0.1); }
 .text-purple-600 { color: #9333ea; } .bg-purple-50 { background-color: #faf5ff; } .bg-purple-600 { background-color: #9333ea; } .hover-bg-purple-700:hover { background-color: #7e22ce; } .bg-purple-500-10 { background-color: rgba(168, 85, 247, 0.1); }
 .text-emerald-600 { color: #059669; } .bg-emerald-50 { background-color: #ecfdf5; } .bg-emerald-600 { background-color: #059669; } .hover-bg-emerald-700:hover { background-color: #047857; } .bg-emerald-500-10 { background-color: rgba(16, 185, 129, 0.1); }
+
+/* =========================================
+   FAQ SECTION (ACCORDION)
+========================================= */
+.faq-section { margin-bottom: 6rem; }
+.faq-subtitle { font-size: 0.75rem; font-weight: 700; text-transform: uppercase; letter-spacing: 0.1em; display: block; margin-bottom: 0.5rem; }
+.faq-title { font-size: 1.875rem; font-weight: 900; margin: 0 0 2.5rem 0; color: #0f172a; border-bottom: 1px solid #e2e8f0; padding-bottom: 1.5rem; }
+.faq-list { display: flex; flex-direction: column; gap: 1.25rem; }
+.faq-item { background: white; border: 1px solid #f1f5f9; border-radius: 1.5rem; box-shadow: 0 1px 2px 0 rgba(0,0,0,0.05); overflow: hidden; transition: all 0.3s ease; }
+.faq-item:hover { box-shadow: 0 15px 20px -5px rgba(0,0,0,0.05); border-color: #e2e8f0; transform: translateY(-2px); }
+.faq-question { width: 100%; display: flex; justify-content: space-between; align-items: center; padding: 1.5rem; background: none; border: none; text-align: left; font-size: 1.15rem; font-weight: 700; color: #1e293b; cursor: pointer; transition: color 0.3s; }
+.faq-question:hover { color: #0f172a; }
+.faq-chevron { font-size: 0.875rem; transition: transform 0.3s ease; margin-left: 1rem; flex-shrink: 0; }
+.faq-answer { max-height: 0; overflow: hidden; transition: max-height 0.35s ease, padding 0.35s ease; padding: 0 1.5rem; color: #475569; font-size: 1rem; line-height: 1.7; font-weight: 500; }
+.faq-item.active { border-color: inherit; }
+.faq-item.active .faq-chevron { transform: rotate(180deg); }
+.faq-item.active .faq-answer { padding-bottom: 1.5rem; }
