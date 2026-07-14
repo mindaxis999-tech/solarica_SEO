@@ -51,6 +51,52 @@
 }]                
 }                
 </script>
+
+    <!--faq schema-->
+    <script type="application/ld+json">
+{                
+"@context" : "https://schema.org",                
+"@type" : "FAQPage",                
+"mainEntity" : [{                
+"@type" : "Question",                
+"name" : "What is an Electric Vehicle Charger and how does it work?",                
+"acceptedAnswer" : {                
+"@type" : "Answer",                
+"text" : "An Electric Vehicle Charger supplies electrical power to charge the battery of an electric vehicle. It is designed for safe and efficient charging at homes, businesses, and public charging locations."                
+}                
+},{                
+"@type" : "Question",                
+"name" : "Which Electric Vehicle Charger is best for my home and for businesses?",                
+"acceptedAnswer" : {                
+"@type" : "Answer",                
+"text" : "The best Electric Vehicle Charger depends on your vehicle type, charging speed requirements, installation location, and how frequently you plan to charge your vehicle."                
+}                
+},{                
+"@type" : "Question",                
+"name" : "Do Solarica Electric Vehicle Chargers work with all vehicles?",                
+"acceptedAnswer" : {                
+"@type" : "Answer",                
+"text" : "Solarica Electric Vehicle Chargers are designed to be compatible with a wide range of electric vehicles using industry-standard charging protocols, ensuring safe and reliable charging."                
+}                
+},{                
+"@type" : "Question",                
+"name" : "What are the good things about having a Solarica Electric Vehicle Charger?",                
+"acceptedAnswer" : {                
+"@type" : "Answer",                
+"text" : "Solarica Electric Vehicle Chargers provide fast, energy-efficient charging with advanced safety features and durable construction for long-term performance."                
+}                
+},{                
+"@type" : "Question",                
+"name" : "Why should I choose a Solarica Electric Vehicle Charger over a regular charger?",                
+"acceptedAnswer" : {                
+"@type" : "Answer",                
+"text" : "Solarica Electric Vehicle Chargers feature advanced technology, reliable performance, professional installation support, and dependable after-sales service, making them an excellent choice for EV charging."                
+}                
+}]                
+}                
+</script>
+    <!--================================-->
+
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
 
     <link rel="stylesheet" href="css/navbar.css?v=2">
@@ -202,7 +248,7 @@
             </div>
 
         </div>
-        
+
         <!-- Interactive FAQ Accordion Section -->
         <div id="faq-section-container" class="container"></div>
     </main>
@@ -359,7 +405,7 @@
                         if (container && productFaqs.length > 0) {
                             const faqSection = document.createElement("section");
                             faqSection.className = "faq-section";
-                            
+
                             let faqItemsHtml = "";
                             productFaqs.forEach((faq) => {
                                 faqItemsHtml += `
@@ -390,17 +436,17 @@
                             faqItems.forEach(item => {
                                 const questionBtn = item.querySelector(".faq-question");
                                 const answerPanel = item.querySelector(".faq-answer");
-                                
+
                                 questionBtn.addEventListener("click", () => {
                                     const isActive = item.classList.contains("active");
-                                    
+
                                     // Close others
                                     faqItems.forEach(otherItem => {
                                         otherItem.classList.remove("active");
                                         otherItem.style.borderColor = "#f1f5f9";
                                         otherItem.querySelector(".faq-answer").style.maxHeight = null;
                                     });
-                                    
+
                                     if (!isActive) {
                                         item.classList.add("active");
                                         item.style.borderColor = "#059669"; // Greenwheels/EV theme color
