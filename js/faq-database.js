@@ -195,7 +195,7 @@ const faqDatabase = {
     },
     {
       "q": "Why choose the Solarica 36W Chandelier Light?",
-      "a": "Solarica 36W Chandeliers combine modern design, energy-efficient LED technology, reliable performance, and premium-quality construction for stylish and long-lasting lighting solutions.  ===Page 2==="
+      "a": "Solarica 36W Chandeliers combine modern design, energy-efficient LED technology, reliable performance, and premium-quality construction for stylish and long-lasting lighting solutions."
     }
   ],
   "commercial-ac-charger-22kw": [
@@ -327,7 +327,7 @@ const faqDatabase = {
     },
     {
       "q": "Can the 6-meter decorative pole be customized for projects?",
-      "a": "Yes Solarica can make the pole and its parts custom, for projects. We do this when asked by the customer.  ===Page 3==="
+      "a": "Yes Solarica can make the pole and its parts custom, for projects. We do this when asked by the customer."
     }
   ],
   "double-arm-bracket": [
@@ -459,7 +459,7 @@ const faqDatabase = {
     },
     {
       "q": "Why choose Solarica EV Charging Station AMC Premium services?",
-      "a": "Solarica is a choice, for EV Charging Station AMC Premium services because they have experts who can help you with your charger. They fix problems quickly check your charger regularly to prevent problems and help you after you buy the service. All of this helps your EV Charging Station work well and last a time. Solarica helps you get the most out of your EV Charging Station.  ===Page 4==="
+      "a": "Solarica is a choice, for EV Charging Station AMC Premium services because they have experts who can help you with your charger. They fix problems quickly check your charger regularly to prevent problems and help you after you buy the service. All of this helps your EV Charging Station work well and last a time. Solarica helps you get the most out of your EV Charging Station."
     }
   ],
   "flexible-solar-panel-200w": [
@@ -591,7 +591,7 @@ const faqDatabase = {
     },
     {
       "q": "Why choose the Solarica 12m High Mast Pole?",
-      "a": "Solarica 12m High Mast Poles are very strong. They last a time. They give support for lights. They are good, for projects and businesses. The Solarica 12m High Mast Pole is a choice.  ===Page 5==="
+      "a": "Solarica 12m High Mast Poles are very strong. They last a time. They give support for lights. They are good, for projects and businesses. The Solarica 12m High Mast Pole is a choice."
     }
   ],
   "high-power-solar-light-80w": [
@@ -723,7 +723,7 @@ const faqDatabase = {
     },
     {
       "q": "Which industries benefit from industrial fabrication work services?",
-      "a": "The industrial fabrication work services are manufacturing, automotive, construction, energy, food processing and heavy engineering industries. These industries benefit the most from industrial fabrication work services because they need a lot of industrial fabrication work. Industrial fabrication work is very important, for these industries.  ===Page 6==="
+      "a": "The industrial fabrication work services are manufacturing, automotive, construction, energy, food processing and heavy engineering industries. These industries benefit the most from industrial fabrication work services because they need a lot of industrial fabrication work. Industrial fabrication work is very important, for these industries."
     }
   ],
   "industrial-lighting-control-panel": [
@@ -877,7 +877,7 @@ const faqDatabase = {
     },
     {
       "q": "How long does a 30W solar street light last with low maintenance?",
-      "a": "LED and solar components typically last years with minimal upkeep, thanks to durable weatherproof design.  ===Page 7==="
+      "a": "LED and solar components typically last years with minimal upkeep, thanks to durable weatherproof design."
     }
   ],
   "led-tube-light-18w": [
@@ -1119,7 +1119,7 @@ const faqDatabase = {
     },
     {
       "q": "Who manufactures the 30W outdoor LED light?",
-      "a": "It's manufactured by Solarica Energy India Pvt. Ltd., a verified Solarica product.  ===Page 8==="
+      "a": "It's manufactured by Solarica Energy India Pvt. Ltd., a verified Solarica product."
     }
   ],
   "pendant-light-15w": [
@@ -1383,7 +1383,7 @@ const faqDatabase = {
     },
     {
       "q": "Who manufactures the short mono rail structure?",
-      "a": "It's manufactured by Solarica Fabtech Pvt. Ltd., a verified Solarica product.  ===Page 9==="
+      "a": "It's manufactured by Solarica Fabtech Pvt. Ltd., a verified Solarica product."
     }
   ],
   "single-arm-bracket": [
@@ -1625,7 +1625,7 @@ const faqDatabase = {
     },
     {
       "q": "How easy are Solar Decorative String Lights to install?",
-      "a": "They install quickly without wiring, making outdoor decoration simple and hassle-free.  ===Page 10==="
+      "a": "They install quickly without wiring, making outdoor decoration simple and hassle-free."
     }
   ],
   "solar-deep-well-pump-10hp": [
@@ -1823,7 +1823,7 @@ const faqDatabase = {
     },
     {
       "q": "Why choose the Solarica 10kW Solar Hybrid Inverter?",
-      "a": "Solarica delivers efficient, reliable, durable, and advanced hybrid solar inverter solutions.  ===Page 11==="
+      "a": "Solarica delivers efficient, reliable, durable, and advanced hybrid solar inverter solutions."
     }
   ],
   "solar-hybrid-inverter-3kw": [
@@ -2017,7 +2017,7 @@ const faqDatabase = {
     },
     {
       "q": "Why choose Solarica Solar Net Lights?",
-      "a": "Solarica offers durable, energy-efficient, stylish, and maintenance-free decorative solar lighting solutions.  ===Page 12==="
+      "a": "Solarica offers durable, energy-efficient, stylish, and maintenance-free decorative solar lighting solutions."
     }
   ],
   "solar-plant-installation-service": [
@@ -2215,7 +2215,7 @@ const faqDatabase = {
     },
     {
       "q": "Why choose the Solarica 200W Solar Stadium Light?",
-      "a": "Solarica offers powerful, energy-efficient, durable, and low-maintenance solar stadium lighting solutions.  ===Page 13==="
+      "a": "Solarica offers powerful, energy-efficient, durable, and low-maintenance solar stadium lighting solutions."
     }
   ],
   "solar-street-light-control-panel": [
@@ -2413,7 +2413,7 @@ const faqDatabase = {
     },
     {
       "q": "Why choose the Solarica 100L Solar Water Heater?",
-      "a": "Solarica offers durable, energy-efficient, and low-maintenance solar water heating solutions.  ===Page 14==="
+      "a": "Solarica offers durable, energy-efficient, and low-maintenance solar water heating solutions."
     }
   ],
   "solar-water-heater-200l": [
@@ -2611,7 +2611,7 @@ const faqDatabase = {
     },
     {
       "q": "Why choose the Solarica 12W Wall Sconce?",
-      "a": "Solarica offers stylish, durable, and energy-efficient wall lighting solutions for modern spaces.  ===Page 15==="
+      "a": "Solarica offers stylish, durable, and energy-efficient wall lighting solutions for modern spaces."
     }
   ],
   "wallbox-ev-charger-11kw": [
