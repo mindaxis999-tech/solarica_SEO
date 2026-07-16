@@ -128,11 +128,14 @@ ul { list-style: none; }
 @media(max-width:768px){
 
 .hero-section{
-    height: 65vh;
+    height: 75vh;
+    min-height: 520px;
+    justify-content: flex-start;
+    padding-top: 10.5rem; /* Safely clear the stacked mobile header */
 }
 
 .hero-text-container{
-    margin-top: 80px;
+    margin-top: 0;
 }
 
 .hero-title{
