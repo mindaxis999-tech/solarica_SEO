@@ -74,6 +74,7 @@
 .social-hover-fb:hover { color: #1877F2; transform: scale(1.1); }
 .social-hover-tw:hover { color: #1DA1F2; transform: scale(1.1); }
 .social-hover-ig:hover { color: #E4405F; transform: scale(1.1); }
+.social-hover-in { margin-right: 1.5rem; }
 .social-hover-in:hover { color: #0A66C2; transform: scale(1.1); }
 
 /* --- Main Header --- */
