@@ -135,4 +135,24 @@ a { text-decoration: none; }
 .faq-answer { max-height: 0; overflow: hidden; transition: max-height 0.35s ease, padding 0.35s ease; padding: 0 1.5rem; color: #475569; font-size: 1rem; line-height: 1.7; font-weight: 500; }
 .faq-item.active { border-color: inherit; }
 .faq-item.active .faq-chevron { transform: rotate(180deg); }
-.faq-item.active .faq-answer { padding-bottom: 1.5rem; }
+.faq-item.active .faq-answer { padding-bottom: 1.5rem; }
+
+/* Custom sizing for specific product images that have large native padding */
+.bollard-image-wrapper {
+    inset: 0 !important;
+}
+.bollard-image-wrapper img {
+    transform: scale(1.9) !important;
+    display: block !important;
+}
+.image-col:hover .bollard-image-wrapper img {
+    transform: scale(2.0) !important;
+}
+.bollard-image-wrapper ~ .verified-badge {
+    top: 1rem !important;
+    left: 1rem !important;
+    padding: 0.35rem 0.85rem !important;
+}
+.bollard-image-wrapper ~ .verified-badge span {
+    font-size: 0.65rem !important;
+}
