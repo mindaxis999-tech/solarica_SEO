@@ -73,9 +73,8 @@
 .top-socials a { transition: all 0.3s; color: inherit; }
 .social-hover-fb:hover { color: #1877F2; transform: scale(1.1); }
 .social-hover-tw:hover { color: #1DA1F2; transform: scale(1.1); }
+.social-hover-ig { margin-right: 1.5rem; }
 .social-hover-ig:hover { color: #E4405F; transform: scale(1.1); }
-.social-hover-in { margin-right: 1.5rem; }
-.social-hover-in:hover { color: #0A66C2; transform: scale(1.1); }
 
 /* --- Main Header --- */
 .nav-main-header { padding: 0.1rem 0.1rem 0; transition: all 0.5s ease-in-out; max-width: 1400px; margin: 0 auto; }
